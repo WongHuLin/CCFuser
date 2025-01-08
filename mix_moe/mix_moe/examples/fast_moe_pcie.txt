@@ -1,0 +1,52 @@
+[Benchmark] world_size = 4, dtype = float16, model_dim = 1024, hidden_size = 4096, samples = 8192, num_local_experts = 8, topK = 2, a2a_ffn_overlap_degree = 1, device = `cuda:0`
+STEP-0: loss = 6.23828, step_time = 7.291382 sec, perf = 0.11 tflops.
+STEP-1: loss = 6.23828, step_time = 0.047429 sec, perf = 17.39 tflops.
+STEP-2: loss = 6.23828, step_time = 0.046376 sec, perf = 17.78 tflops.
+STEP-3: loss = 6.23828, step_time = 0.040815 sec, perf = 20.20 tflops.
+STEP-4: loss = 6.23828, step_time = 0.041590 sec, perf = 19.83 tflops.
+STEP-5: loss = 6.23828, step_time = 0.042509 sec, perf = 19.40 tflops.
+STEP-6: loss = 6.23828, step_time = 0.041515 sec, perf = 19.86 tflops.
+STEP-7: loss = 6.23828, step_time = 0.041058 sec, perf = 20.08 tflops.
+STEP-8: loss = 6.23828, step_time = 0.041066 sec, perf = 20.08 tflops.
+STEP-9: loss = 6.23828, step_time = 0.040627 sec, perf = 20.30 tflops.
+
+ end end end
+[Benchmark] world_size = 4, dtype = float16, model_dim = 1024, hidden_size = 4096, samples = 8192, num_local_experts = 16, topK = 2, a2a_ffn_overlap_degree = 1, device = `cuda:0`
+STEP-0: loss = 6.23828, step_time = 7.582272 sec, perf = 0.11 tflops.
+STEP-1: loss = 6.23828, step_time = 0.051830 sec, perf = 15.91 tflops.
+STEP-2: loss = 6.23828, step_time = 0.049237 sec, perf = 16.75 tflops.
+STEP-3: loss = 6.23828, step_time = 0.048060 sec, perf = 17.16 tflops.
+STEP-4: loss = 6.23828, step_time = 0.051610 sec, perf = 15.98 tflops.
+STEP-5: loss = 6.23828, step_time = 0.051016 sec, perf = 16.16 tflops.
+STEP-6: loss = 6.23828, step_time = 0.051048 sec, perf = 16.15 tflops.
+STEP-7: loss = 6.23828, step_time = 0.051876 sec, perf = 15.90 tflops.
+STEP-8: loss = 6.23828, step_time = 0.048172 sec, perf = 17.12 tflops.
+STEP-9: loss = 6.23828, step_time = 0.050502 sec, perf = 16.33 tflops.
+
+ end end end
+[Benchmark] world_size = 4, dtype = float16, model_dim = 1024, hidden_size = 4096, samples = 8192, num_local_experts = 32, topK = 2, a2a_ffn_overlap_degree = 1, device = `cuda:0`
+STEP-0: loss = 6.23828, step_time = 7.366447 sec, perf = 0.11 tflops.
+STEP-1: loss = 6.23828, step_time = 0.069771 sec, perf = 11.82 tflops.
+STEP-2: loss = 6.23828, step_time = 0.064449 sec, perf = 12.80 tflops.
+STEP-3: loss = 6.23828, step_time = 0.065339 sec, perf = 12.62 tflops.
+STEP-4: loss = 6.23828, step_time = 0.064111 sec, perf = 12.86 tflops.
+STEP-5: loss = 6.23828, step_time = 0.060704 sec, perf = 13.58 tflops.
+STEP-6: loss = 6.23828, step_time = 0.070626 sec, perf = 11.68 tflops.
+STEP-7: loss = 6.23828, step_time = 0.063416 sec, perf = 13.00 tflops.
+STEP-8: loss = 6.23828, step_time = 0.068282 sec, perf = 12.08 tflops.
+STEP-9: loss = 6.23828, step_time = 0.062399 sec, perf = 13.22 tflops.
+
+ end end end
+[Benchmark] world_size = 4, dtype = float16, model_dim = 1024, hidden_size = 4096, samples = 8192, num_local_experts = 64, topK = 2, a2a_ffn_overlap_degree = 1, device = `cuda:0`
+STEP-0: loss = 6.23828, step_time = 8.091615 sec, perf = 0.10 tflops.
+STEP-1: loss = 6.23828, step_time = 0.797216 sec, perf = 1.03 tflops.
+STEP-2: loss = 6.23828, step_time = 0.089959 sec, perf = 9.17 tflops.
+STEP-3: loss = 6.23828, step_time = 0.089467 sec, perf = 9.22 tflops.
+STEP-4: loss = 6.23828, step_time = 0.092122 sec, perf = 8.95 tflops.
+STEP-5: loss = 6.23828, step_time = 0.093267 sec, perf = 8.84 tflops.
+STEP-6: loss = 6.23828, step_time = 0.090137 sec, perf = 9.15 tflops.
+STEP-7: loss = 6.23828, step_time = 0.091284 sec, perf = 9.03 tflops.
+STEP-8: loss = 6.23828, step_time = 0.089488 sec, perf = 9.22 tflops.
+STEP-9: loss = 6.23828, step_time = 0.089016 sec, perf = 9.26 tflops.
+
+ end end end

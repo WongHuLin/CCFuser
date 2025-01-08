@@ -1,0 +1,1089 @@
+local_rank 0
+world_rank 0
+world_size 4
+local_rank 1
+world_rank 1
+world_size 4
+local_rank 2
+world_rank 2
+world_size 4
+local_rank 3
+world_rank 3
+world_size 4
+DistributedDataParallel(
+  (module): GPT2LMHeadModel(
+    (transformer): GPT2Model(
+      (wte): Embedding(50259, 768)
+      (wpe): Embedding(1024, 768)
+      (drop): Dropout(p=0.1, inplace=False)
+      (h): ModuleList(
+        (0-11): 12 x GPT2Block(
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (attn): GPT2Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1, inplace=False)
+            (resid_dropout): Dropout(p=0.1, inplace=False)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPT2MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+    )
+    (lm_head): Linear(in_features=768, out_features=50259, bias=False)
+  )
+)
+STEP-0: step_time = 1110.413330 ms, foward_time = 846.718994, backward_time = 258.432007
+STEP-1: step_time = 260.719604 ms, foward_time = 70.332413, backward_time = 187.300858
+STEP-2: step_time = 268.347382 ms, foward_time = 73.588737, backward_time = 191.720444
+STEP-3: step_time = 270.156799 ms, foward_time = 72.964096, backward_time = 194.102264
+STEP-4: step_time = 262.303741 ms, foward_time = 69.144577, backward_time = 190.048264
+STEP-5: step_time = 258.152435 ms, foward_time = 68.829185, backward_time = 186.238983
+STEP-6: step_time = 268.963837 ms, foward_time = 69.279747, backward_time = 196.473862
+STEP-7: step_time = 257.659912 ms, foward_time = 68.896767, backward_time = 185.723907
+STEP-8: step_time = 257.308685 ms, foward_time = 68.887550, backward_time = 185.399292
+STEP-9: step_time = 258.124786 ms, foward_time = 68.789246, backward_time = 186.284027
+STEP-10: step_time = 265.125885 ms, foward_time = 68.847618, backward_time = 193.207291
+STEP-11: step_time = 259.447815 ms, foward_time = 69.138435, backward_time = 187.074554
+STEP-12: step_time = 257.724426 ms, foward_time = 68.905983, backward_time = 185.765884
+STEP-13: step_time = 257.952759 ms, foward_time = 68.687874, backward_time = 186.223618
+STEP-14: step_time = 263.460876 ms, foward_time = 69.176323, backward_time = 191.199234
+STEP-15: step_time = 260.882446 ms, foward_time = 68.587517, backward_time = 189.245438
+STEP-16: step_time = 262.549500 ms, foward_time = 68.736000, backward_time = 190.771194
+STEP-17: step_time = 263.695374 ms, foward_time = 68.912125, backward_time = 191.638535
+STEP-18: step_time = 263.576569 ms, foward_time = 68.872192, backward_time = 191.622147
+STEP-19: step_time = 258.396149 ms, foward_time = 69.265411, backward_time = 185.987076
+STEP-20: step_time = 258.985992 ms, foward_time = 69.156860, backward_time = 186.730499
+STEP-21: step_time = 262.568970 ms, foward_time = 69.038078, backward_time = 190.485504
+STEP-22: step_time = 263.035919 ms, foward_time = 68.801537, backward_time = 191.166458
+STEP-23: step_time = 258.489349 ms, foward_time = 69.761024, backward_time = 185.635834
+STEP-24: step_time = 257.869812 ms, foward_time = 69.043198, backward_time = 185.783295
+STEP-25: step_time = 257.981445 ms, foward_time = 68.897789, backward_time = 186.002426
+STEP-26: step_time = 264.535034 ms, foward_time = 71.245827, backward_time = 190.183426
+STEP-27: step_time = 263.450623 ms, foward_time = 69.169151, backward_time = 191.148026
+STEP-28: step_time = 259.332092 ms, foward_time = 69.033981, backward_time = 187.244537
+STEP-29: step_time = 258.832397 ms, foward_time = 70.408195, backward_time = 185.352188
+STEP-30: step_time = 261.908478 ms, foward_time = 68.876289, backward_time = 189.932541
+STEP-31: step_time = 261.779449 ms, foward_time = 68.714493, backward_time = 190.027771
+STEP-32: step_time = 257.986572 ms, foward_time = 68.755455, backward_time = 186.190842
+STEP-33: step_time = 259.706879 ms, foward_time = 69.084160, backward_time = 187.430908
+STEP-34: step_time = 262.299652 ms, foward_time = 69.297150, backward_time = 189.906937
+STEP-35: step_time = 264.150024 ms, foward_time = 69.167107, backward_time = 191.851517
+STEP-36: step_time = 263.524353 ms, foward_time = 68.890625, backward_time = 191.565826
+STEP-37: step_time = 260.585480 ms, foward_time = 68.846596, backward_time = 188.631042
+STEP-38: step_time = 267.370483 ms, foward_time = 73.197571, backward_time = 191.102982
+STEP-39: step_time = 257.939453 ms, foward_time = 68.964355, backward_time = 185.905151
+STEP-40: step_time = 258.420746 ms, foward_time = 68.978691, backward_time = 186.391556
+STEP-41: step_time = 261.919739 ms, foward_time = 68.959229, backward_time = 189.865982
+STEP-42: step_time = 274.186249 ms, foward_time = 68.715523, backward_time = 202.429443
+STEP-43: step_time = 270.407684 ms, foward_time = 69.399551, backward_time = 197.832703
+STEP-44: step_time = 261.343231 ms, foward_time = 68.908035, backward_time = 189.372421
+STEP-45: step_time = 268.966919 ms, foward_time = 68.998146, backward_time = 196.894714
+STEP-46: step_time = 262.000641 ms, foward_time = 69.907455, backward_time = 188.761093
+STEP-47: step_time = 260.484100 ms, foward_time = 69.428223, backward_time = 187.719681
+STEP-48: step_time = 268.052490 ms, foward_time = 69.308418, backward_time = 195.405823
+STEP-49: step_time = 261.789703 ms, foward_time = 69.330940, backward_time = 189.130753
+STEP-50: step_time = 262.905853 ms, foward_time = 69.491714, backward_time = 189.858810
+STEP-51: step_time = 261.396484 ms, foward_time = 69.380096, backward_time = 188.651520
+STEP-52: step_time = 261.579773 ms, foward_time = 69.453827, backward_time = 188.809219
+STEP-53: step_time = 266.412018 ms, foward_time = 69.263359, backward_time = 193.742844
+STEP-54: step_time = 267.936768 ms, foward_time = 70.127617, backward_time = 194.436096
+STEP-55: step_time = 261.334015 ms, foward_time = 69.349373, backward_time = 188.605438
+STEP-56: step_time = 261.275635 ms, foward_time = 69.102592, backward_time = 188.821503
+STEP-57: step_time = 263.862274 ms, foward_time = 69.131264, backward_time = 191.416321
+STEP-58: step_time = 266.582031 ms, foward_time = 69.556221, backward_time = 193.658875
+STEP-59: step_time = 261.954559 ms, foward_time = 69.326851, backward_time = 189.281281
+STEP-60: step_time = 261.689331 ms, foward_time = 69.477379, backward_time = 188.844025
+STEP-61: step_time = 265.647095 ms, foward_time = 69.208061, backward_time = 193.113083
+STEP-62: step_time = 264.099854 ms, foward_time = 69.789696, backward_time = 190.949371
+STEP-63: step_time = 263.747589 ms, foward_time = 69.713921, backward_time = 190.652420
+STEP-64: step_time = 264.231934 ms, foward_time = 72.190979, backward_time = 188.655609
+STEP-65: step_time = 261.778442 ms, foward_time = 69.301247, backward_time = 189.147141
+STEP-66: step_time = 267.309052 ms, foward_time = 69.530624, backward_time = 194.373627
+STEP-67: step_time = 261.408783 ms, foward_time = 69.676033, backward_time = 188.356613
+STEP-68: step_time = 262.863861 ms, foward_time = 69.482498, backward_time = 190.066681
+STEP-69: step_time = 260.613129 ms, foward_time = 69.073921, backward_time = 188.204025
+STEP-70: step_time = 264.207367 ms, foward_time = 69.367805, backward_time = 191.503357
+STEP-71: step_time = 260.910095 ms, foward_time = 69.319679, backward_time = 188.213242
+STEP-72: step_time = 260.635651 ms, foward_time = 69.485565, backward_time = 187.806717
+STEP-73: step_time = 265.558014 ms, foward_time = 69.325821, backward_time = 192.838654
+STEP-74: step_time = 263.933960 ms, foward_time = 69.667839, backward_time = 190.915588
+STEP-75: step_time = 267.956238 ms, foward_time = 70.166527, backward_time = 194.392059
+STEP-76: step_time = 262.723572 ms, foward_time = 70.037506, backward_time = 189.234177
+STEP-77: step_time = 262.017029 ms, foward_time = 69.623810, backward_time = 189.042694
+STEP-78: step_time = 266.887177 ms, foward_time = 69.409790, backward_time = 194.148346
+STEP-79: step_time = 261.423096 ms, foward_time = 69.733376, backward_time = 188.254211
+STEP-80: step_time = 264.826874 ms, foward_time = 69.302269, backward_time = 192.158722
+STEP-81: step_time = 261.938171 ms, foward_time = 69.916672, backward_time = 188.608505
+STEP-82: step_time = 263.319550 ms, foward_time = 69.895164, backward_time = 190.040070
+STEP-83: step_time = 262.264832 ms, foward_time = 69.592064, backward_time = 189.303802
+STEP-84: step_time = 267.803650 ms, foward_time = 69.436417, backward_time = 195.065857
+STEP-85: step_time = 261.503998 ms, foward_time = 69.526527, backward_time = 188.639236
+STEP-86: step_time = 269.233154 ms, foward_time = 69.552132, backward_time = 196.349945
+STEP-87: step_time = 261.814270 ms, foward_time = 69.805054, backward_time = 188.603394
+STEP-88: step_time = 264.863739 ms, foward_time = 69.385216, backward_time = 192.153595
+STEP-89: step_time = 263.393280 ms, foward_time = 70.187012, backward_time = 189.758469
+STEP-90: step_time = 265.159668 ms, foward_time = 69.867523, backward_time = 191.879166
+STEP-91: step_time = 266.212341 ms, foward_time = 69.605377, backward_time = 193.150970
+STEP-92: step_time = 264.959991 ms, foward_time = 69.455872, backward_time = 192.205826
+STEP-93: step_time = 260.971527 ms, foward_time = 69.243904, backward_time = 188.374023
+STEP-94: step_time = 265.562103 ms, foward_time = 69.405693, backward_time = 192.808960
+STEP-95: step_time = 262.596619 ms, foward_time = 69.292030, backward_time = 189.961212
+STEP-96: step_time = 265.157623 ms, foward_time = 69.736450, backward_time = 191.986694
+STEP-97: step_time = 262.372345 ms, foward_time = 69.832703, backward_time = 189.140991
+STEP-98: step_time = 260.987915 ms, foward_time = 69.762047, backward_time = 187.829254
+STEP-99: step_time = 266.429443 ms, foward_time = 69.489662, backward_time = 193.557510
+
+ naive gpt2 16 [Summary] Average synchronized step_time = 263.89705454508464 ms,
+ddp
+ddp
+DistributedDataParallel(
+  (module): GPT2LMHeadModel(
+    (transformer): GPT2Model(
+      (wte): Embedding(50259, 768)
+      (wpe): Embedding(1024, 768)
+      (drop): Dropout(p=0.1, inplace=False)
+      (h): ModuleList(
+        (0-11): 12 x GPT2Block(
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (attn): GPT2Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1, inplace=False)
+            (resid_dropout): Dropout(p=0.1, inplace=False)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPT2MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+    )
+    (lm_head): Linear(in_features=768, out_features=50259, bias=False)
+  )
+)
+ddp
+ddp
+STEP-0: step_time = 263.766022 ms, foward_time = 69.398529, backward_time = 191.031296
+STEP-1: step_time = 268.062714 ms, foward_time = 70.170624, backward_time = 194.534393
+STEP-2: step_time = 261.793793 ms, foward_time = 70.127617, backward_time = 188.315643
+STEP-3: step_time = 262.530060 ms, foward_time = 69.449730, backward_time = 189.744125
+STEP-4: step_time = 263.077881 ms, foward_time = 70.123520, backward_time = 189.465607
+STEP-5: step_time = 262.601715 ms, foward_time = 69.714943, backward_time = 189.478912
+STEP-6: step_time = 265.629700 ms, foward_time = 69.826561, backward_time = 192.424957
+STEP-7: step_time = 261.869568 ms, foward_time = 69.487617, backward_time = 189.036545
+STEP-8: step_time = 269.317108 ms, foward_time = 72.140800, backward_time = 193.819641
+STEP-9: step_time = 261.601288 ms, foward_time = 69.629951, backward_time = 188.595200
+STEP-10: step_time = 269.660156 ms, foward_time = 69.608444, backward_time = 196.706299
+STEP-11: step_time = 272.983032 ms, foward_time = 69.464066, backward_time = 200.165375
+STEP-12: step_time = 273.847290 ms, foward_time = 69.971970, backward_time = 200.434692
+STEP-13: step_time = 264.240143 ms, foward_time = 69.681152, backward_time = 191.170563
+STEP-14: step_time = 264.712189 ms, foward_time = 69.489662, backward_time = 191.862778
+STEP-15: step_time = 261.068787 ms, foward_time = 69.439491, backward_time = 188.302338
+STEP-16: step_time = 269.506561 ms, foward_time = 73.616386, backward_time = 192.532486
+STEP-17: step_time = 261.451782 ms, foward_time = 69.561340, backward_time = 188.494843
+STEP-18: step_time = 261.416962 ms, foward_time = 69.612541, backward_time = 188.468231
+STEP-19: step_time = 262.776825 ms, foward_time = 69.447678, backward_time = 189.933563
+STEP-20: step_time = 262.517761 ms, foward_time = 69.951485, backward_time = 189.200378
+STEP-21: step_time = 265.822205 ms, foward_time = 69.913597, backward_time = 192.521210
+STEP-22: step_time = 262.546417 ms, foward_time = 69.748734, backward_time = 189.393921
+STEP-23: step_time = 265.601013 ms, foward_time = 69.594109, backward_time = 192.622589
+STEP-24: step_time = 266.295288 ms, foward_time = 69.560318, backward_time = 193.392639
+STEP-25: step_time = 261.906433 ms, foward_time = 69.386238, backward_time = 189.194244
+STEP-26: step_time = 262.079498 ms, foward_time = 69.267456, backward_time = 189.485062
+STEP-27: step_time = 262.227966 ms, foward_time = 69.858307, backward_time = 188.873734
+STEP-28: step_time = 262.120453 ms, foward_time = 69.524483, backward_time = 189.168640
+STEP-29: step_time = 262.132721 ms, foward_time = 69.642242, backward_time = 189.118469
+STEP-30: step_time = 261.903351 ms, foward_time = 69.613571, backward_time = 188.934143
+STEP-31: step_time = 261.684235 ms, foward_time = 69.764099, backward_time = 188.572678
+STEP-32: step_time = 262.177795 ms, foward_time = 69.720062, backward_time = 189.087738
+STEP-33: step_time = 262.009857 ms, foward_time = 69.769218, backward_time = 188.820480
+STEP-34: step_time = 261.297150 ms, foward_time = 69.375999, backward_time = 188.579834
+STEP-35: step_time = 261.785614 ms, foward_time = 70.113281, backward_time = 188.249084
+STEP-36: step_time = 262.535156 ms, foward_time = 70.096893, backward_time = 189.067261
+STEP-37: step_time = 265.807861 ms, foward_time = 69.593086, backward_time = 192.828415
+STEP-38: step_time = 262.235138 ms, foward_time = 69.432320, backward_time = 189.457413
+STEP-39: step_time = 261.501953 ms, foward_time = 69.580803, backward_time = 188.567551
+STEP-40: step_time = 267.102203 ms, foward_time = 69.481468, backward_time = 194.252808
+STEP-41: step_time = 262.382599 ms, foward_time = 69.711868, backward_time = 189.285370
+STEP-42: step_time = 261.867523 ms, foward_time = 69.852158, backward_time = 188.612610
+STEP-43: step_time = 266.306549 ms, foward_time = 69.975037, backward_time = 192.921600
+STEP-44: step_time = 265.385986 ms, foward_time = 69.594109, backward_time = 192.435196
+STEP-45: step_time = 261.420044 ms, foward_time = 69.880829, backward_time = 188.122116
+STEP-46: step_time = 262.536194 ms, foward_time = 69.510147, backward_time = 189.680634
+STEP-47: step_time = 261.932037 ms, foward_time = 69.693443, backward_time = 188.886017
+STEP-48: step_time = 261.383179 ms, foward_time = 69.501953, backward_time = 188.529663
+STEP-49: step_time = 265.814026 ms, foward_time = 69.519363, backward_time = 192.954361
+STEP-50: step_time = 261.544952 ms, foward_time = 69.520386, backward_time = 188.571655
+STEP-51: step_time = 261.965820 ms, foward_time = 69.895164, backward_time = 188.643326
+STEP-52: step_time = 262.744049 ms, foward_time = 69.574654, backward_time = 189.809662
+STEP-53: step_time = 260.876282 ms, foward_time = 69.543938, backward_time = 187.934723
+STEP-54: step_time = 261.711884 ms, foward_time = 69.473282, backward_time = 188.878845
+STEP-55: step_time = 266.824707 ms, foward_time = 73.292801, backward_time = 190.150650
+STEP-56: step_time = 261.357574 ms, foward_time = 69.550079, backward_time = 188.454910
+STEP-57: step_time = 260.743164 ms, foward_time = 69.596161, backward_time = 187.773956
+STEP-58: step_time = 262.484985 ms, foward_time = 70.193153, backward_time = 188.849152
+STEP-59: step_time = 261.748749 ms, foward_time = 69.853188, backward_time = 188.491776
+STEP-60: step_time = 263.475189 ms, foward_time = 69.560318, backward_time = 190.564346
+STEP-61: step_time = 261.366791 ms, foward_time = 69.772285, backward_time = 188.230652
+STEP-62: step_time = 263.027710 ms, foward_time = 69.582848, backward_time = 190.121979
+STEP-63: step_time = 261.701630 ms, foward_time = 69.898239, backward_time = 188.380157
+STEP-64: step_time = 262.213623 ms, foward_time = 69.554176, backward_time = 189.314041
+STEP-65: step_time = 262.302734 ms, foward_time = 69.723137, backward_time = 189.168640
+STEP-66: step_time = 265.241608 ms, foward_time = 70.270973, backward_time = 191.514618
+STEP-67: step_time = 261.410828 ms, foward_time = 69.655556, backward_time = 188.350464
+STEP-68: step_time = 261.434357 ms, foward_time = 69.632004, backward_time = 188.457977
+STEP-69: step_time = 266.949646 ms, foward_time = 69.579773, backward_time = 194.023422
+STEP-70: step_time = 265.161743 ms, foward_time = 69.486595, backward_time = 192.326660
+STEP-71: step_time = 266.379272 ms, foward_time = 69.683197, backward_time = 193.269760
+STEP-72: step_time = 260.556793 ms, foward_time = 69.433342, backward_time = 187.776001
+STEP-73: step_time = 266.309631 ms, foward_time = 70.181885, backward_time = 192.693253
+STEP-74: step_time = 261.957642 ms, foward_time = 70.112259, backward_time = 188.381180
+STEP-75: step_time = 264.953857 ms, foward_time = 71.973885, backward_time = 189.585403
+STEP-76: step_time = 260.895752 ms, foward_time = 69.541885, backward_time = 188.005371
+STEP-77: step_time = 261.219330 ms, foward_time = 69.580803, backward_time = 188.271622
+STEP-78: step_time = 261.254150 ms, foward_time = 69.767166, backward_time = 188.154877
+STEP-79: step_time = 264.792053 ms, foward_time = 69.600258, backward_time = 191.840256
+STEP-80: step_time = 262.173706 ms, foward_time = 69.655556, backward_time = 189.171707
+STEP-81: step_time = 266.691589 ms, foward_time = 69.751808, backward_time = 193.485825
+STEP-82: step_time = 265.112579 ms, foward_time = 69.877762, backward_time = 191.806458
+STEP-83: step_time = 261.266418 ms, foward_time = 69.625854, backward_time = 188.258301
+STEP-84: step_time = 266.180603 ms, foward_time = 69.702660, backward_time = 193.107971
+STEP-85: step_time = 261.331970 ms, foward_time = 69.458946, backward_time = 188.512253
+STEP-86: step_time = 266.064911 ms, foward_time = 69.503998, backward_time = 193.205246
+STEP-87: step_time = 266.209290 ms, foward_time = 69.985283, backward_time = 192.881668
+STEP-88: step_time = 264.375305 ms, foward_time = 69.362686, backward_time = 191.670273
+STEP-89: step_time = 262.729736 ms, foward_time = 70.750206, backward_time = 188.451843
+STEP-90: step_time = 262.366211 ms, foward_time = 69.883904, backward_time = 189.110275
+STEP-91: step_time = 266.396667 ms, foward_time = 70.109184, backward_time = 192.820221
+STEP-92: step_time = 266.917877 ms, foward_time = 70.834175, backward_time = 192.557053
+STEP-93: step_time = 262.466553 ms, foward_time = 70.199295, backward_time = 188.809219
+STEP-94: step_time = 261.571594 ms, foward_time = 69.793793, backward_time = 188.388351
+STEP-95: step_time = 262.107147 ms, foward_time = 69.833725, backward_time = 188.914688
+STEP-96: step_time = 261.427185 ms, foward_time = 69.707779, backward_time = 188.358658
+STEP-97: step_time = 265.912323 ms, foward_time = 70.138878, backward_time = 192.354309
+STEP-98: step_time = 261.796875 ms, foward_time = 69.728256, backward_time = 188.677124
+STEP-99: step_time = 265.402374 ms, foward_time = 69.742592, backward_time = 192.284668
+
+ fastermoe gpt2 16 [Summary] Average synchronized step_time = 263.3206293741862 ms,
+ddp
+ddp
+DistributedDataParallel(
+  (module): GPT2LMHeadModel(
+    (transformer): GPT2Model(
+      (wte): Embedding(50259, 768)
+      (wpe): Embedding(1024, 768)
+      (drop): Dropout(p=0.1, inplace=False)
+      (h): ModuleList(
+        (0-11): 12 x GPT2Block(
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (attn): GPT2Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1, inplace=False)
+            (resid_dropout): Dropout(p=0.1, inplace=False)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPT2MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+    )
+    (lm_head): Linear(in_features=768, out_features=50259, bias=False)
+  )
+)
+ddp
+ddp
+STEP-0: step_time = 308.837372 ms, foward_time = 70.592514, backward_time = 234.263550
+STEP-1: step_time = 263.483398 ms, foward_time = 70.116348, backward_time = 190.018555
+STEP-2: step_time = 261.691406 ms, foward_time = 69.572609, backward_time = 188.718079
+STEP-3: step_time = 262.961151 ms, foward_time = 69.412865, backward_time = 190.169083
+STEP-4: step_time = 263.469055 ms, foward_time = 69.375999, backward_time = 190.693375
+STEP-5: step_time = 264.933380 ms, foward_time = 69.257217, backward_time = 192.303101
+STEP-6: step_time = 261.607422 ms, foward_time = 69.972992, backward_time = 188.210175
+STEP-7: step_time = 261.480438 ms, foward_time = 69.417984, backward_time = 188.689407
+STEP-8: step_time = 267.241486 ms, foward_time = 69.353470, backward_time = 194.486267
+STEP-9: step_time = 261.130249 ms, foward_time = 69.381119, backward_time = 188.361725
+STEP-10: step_time = 265.248779 ms, foward_time = 69.367805, backward_time = 192.494598
+STEP-11: step_time = 264.451080 ms, foward_time = 69.224449, backward_time = 191.851517
+STEP-12: step_time = 273.329163 ms, foward_time = 72.824829, backward_time = 197.087234
+STEP-13: step_time = 269.543427 ms, foward_time = 76.195839, backward_time = 189.599747
+STEP-14: step_time = 261.746674 ms, foward_time = 69.579773, backward_time = 188.779526
+STEP-15: step_time = 264.878082 ms, foward_time = 69.652481, backward_time = 191.888382
+STEP-16: step_time = 273.470459 ms, foward_time = 69.796867, backward_time = 200.324097
+STEP-17: step_time = 262.395905 ms, foward_time = 69.299202, backward_time = 189.741058
+STEP-18: step_time = 262.923279 ms, foward_time = 69.751808, backward_time = 189.769730
+STEP-19: step_time = 263.409668 ms, foward_time = 69.577728, backward_time = 190.454788
+STEP-20: step_time = 262.995972 ms, foward_time = 69.241859, backward_time = 190.388229
+STEP-21: step_time = 262.554626 ms, foward_time = 70.001663, backward_time = 189.072388
+STEP-22: step_time = 264.555511 ms, foward_time = 69.451775, backward_time = 191.760391
+STEP-23: step_time = 268.819458 ms, foward_time = 69.341187, backward_time = 196.097031
+STEP-24: step_time = 261.783539 ms, foward_time = 69.379074, backward_time = 189.017090
+STEP-25: step_time = 261.007355 ms, foward_time = 69.326851, backward_time = 188.343292
+STEP-26: step_time = 264.373260 ms, foward_time = 69.227524, backward_time = 191.782913
+STEP-27: step_time = 263.708679 ms, foward_time = 69.200897, backward_time = 191.133698
+STEP-28: step_time = 264.670197 ms, foward_time = 69.635071, backward_time = 191.646713
+STEP-29: step_time = 262.285309 ms, foward_time = 69.865471, backward_time = 188.962814
+STEP-30: step_time = 262.808563 ms, foward_time = 69.477379, backward_time = 189.930496
+STEP-31: step_time = 261.568512 ms, foward_time = 69.555199, backward_time = 188.577789
+STEP-32: step_time = 261.452789 ms, foward_time = 69.585922, backward_time = 188.534790
+STEP-33: step_time = 261.917694 ms, foward_time = 69.360641, backward_time = 189.196289
+STEP-34: step_time = 262.781952 ms, foward_time = 69.561340, backward_time = 189.874176
+STEP-35: step_time = 261.323761 ms, foward_time = 69.384193, backward_time = 188.551163
+STEP-36: step_time = 262.592499 ms, foward_time = 69.390335, backward_time = 189.856766
+STEP-37: step_time = 263.969788 ms, foward_time = 69.900291, backward_time = 190.613510
+STEP-38: step_time = 265.710602 ms, foward_time = 69.410812, backward_time = 192.929794
+STEP-39: step_time = 261.854218 ms, foward_time = 69.473282, backward_time = 188.981247
+STEP-40: step_time = 265.430023 ms, foward_time = 69.818367, backward_time = 192.082947
+STEP-41: step_time = 264.241150 ms, foward_time = 69.966850, backward_time = 190.854141
+STEP-42: step_time = 263.826447 ms, foward_time = 69.569534, backward_time = 190.907394
+STEP-43: step_time = 261.919739 ms, foward_time = 69.582848, backward_time = 188.946426
+STEP-44: step_time = 265.807861 ms, foward_time = 69.839874, backward_time = 192.507904
+STEP-45: step_time = 263.345154 ms, foward_time = 69.670914, backward_time = 190.298111
+STEP-46: step_time = 263.034882 ms, foward_time = 69.426178, backward_time = 190.217209
+STEP-47: step_time = 264.101898 ms, foward_time = 71.191551, backward_time = 189.251587
+STEP-48: step_time = 263.434235 ms, foward_time = 69.841919, backward_time = 190.190598
+STEP-49: step_time = 263.580658 ms, foward_time = 69.455872, backward_time = 190.726151
+STEP-50: step_time = 264.996857 ms, foward_time = 69.586945, backward_time = 191.991806
+STEP-51: step_time = 262.196228 ms, foward_time = 69.360641, backward_time = 189.481979
+STEP-52: step_time = 263.266296 ms, foward_time = 69.976067, backward_time = 189.853699
+STEP-53: step_time = 267.666443 ms, foward_time = 69.449730, backward_time = 194.833405
+STEP-54: step_time = 261.990387 ms, foward_time = 69.525505, backward_time = 189.095932
+STEP-55: step_time = 264.875000 ms, foward_time = 69.404671, backward_time = 192.101379
+STEP-56: step_time = 263.310333 ms, foward_time = 69.898239, backward_time = 189.974533
+STEP-57: step_time = 264.524811 ms, foward_time = 69.515266, backward_time = 191.619080
+STEP-58: step_time = 264.224762 ms, foward_time = 69.561340, backward_time = 191.314941
+STEP-59: step_time = 266.566650 ms, foward_time = 69.572609, backward_time = 193.582077
+STEP-60: step_time = 261.268494 ms, foward_time = 69.775360, backward_time = 188.055557
+STEP-61: step_time = 261.448700 ms, foward_time = 69.514236, backward_time = 188.536835
+STEP-62: step_time = 262.787079 ms, foward_time = 69.514236, backward_time = 189.865982
+STEP-63: step_time = 263.991302 ms, foward_time = 69.447678, backward_time = 191.160324
+STEP-64: step_time = 261.291016 ms, foward_time = 69.529602, backward_time = 188.364807
+STEP-65: step_time = 263.214081 ms, foward_time = 69.445633, backward_time = 190.413818
+STEP-66: step_time = 261.876740 ms, foward_time = 69.422081, backward_time = 189.102081
+STEP-67: step_time = 261.768188 ms, foward_time = 69.864449, backward_time = 188.456955
+STEP-68: step_time = 264.060913 ms, foward_time = 69.904381, backward_time = 190.725113
+STEP-69: step_time = 264.814606 ms, foward_time = 69.640190, backward_time = 191.748093
+STEP-70: step_time = 262.142975 ms, foward_time = 69.739517, backward_time = 188.968964
+STEP-71: step_time = 262.822906 ms, foward_time = 69.774338, backward_time = 189.614075
+STEP-72: step_time = 263.852020 ms, foward_time = 69.841919, backward_time = 190.616577
+STEP-73: step_time = 262.697998 ms, foward_time = 69.586945, backward_time = 189.716476
+STEP-74: step_time = 261.859314 ms, foward_time = 69.281792, backward_time = 189.208572
+STEP-75: step_time = 265.320435 ms, foward_time = 69.911552, backward_time = 191.935486
+STEP-76: step_time = 261.934082 ms, foward_time = 69.709824, backward_time = 188.779526
+STEP-77: step_time = 263.067657 ms, foward_time = 69.533699, backward_time = 190.160889
+STEP-78: step_time = 262.055939 ms, foward_time = 69.428223, backward_time = 189.261826
+STEP-79: step_time = 263.144440 ms, foward_time = 69.545982, backward_time = 190.137344
+STEP-80: step_time = 267.346954 ms, foward_time = 69.833725, backward_time = 194.095108
+STEP-81: step_time = 264.452087 ms, foward_time = 69.756927, backward_time = 191.277054
+STEP-82: step_time = 262.295563 ms, foward_time = 69.960701, backward_time = 188.930054
+STEP-83: step_time = 262.521851 ms, foward_time = 70.070274, backward_time = 188.990463
+STEP-84: step_time = 265.180145 ms, foward_time = 69.686272, backward_time = 192.089081
+STEP-85: step_time = 262.311951 ms, foward_time = 69.838844, backward_time = 189.042694
+STEP-86: step_time = 261.298187 ms, foward_time = 69.612541, backward_time = 188.311554
+STEP-87: step_time = 263.088135 ms, foward_time = 69.767166, backward_time = 189.894653
+STEP-88: step_time = 263.455750 ms, foward_time = 69.751808, backward_time = 190.279678
+STEP-89: step_time = 267.733002 ms, foward_time = 69.555199, backward_time = 194.802689
+STEP-90: step_time = 261.814270 ms, foward_time = 69.493759, backward_time = 188.927994
+STEP-91: step_time = 266.903564 ms, foward_time = 70.002686, backward_time = 193.453049
+STEP-92: step_time = 263.954437 ms, foward_time = 70.099968, backward_time = 190.436356
+STEP-93: step_time = 265.689087 ms, foward_time = 69.682175, backward_time = 192.589828
+STEP-94: step_time = 264.623108 ms, foward_time = 69.852158, backward_time = 191.331329
+STEP-95: step_time = 263.728119 ms, foward_time = 69.730301, backward_time = 190.559235
+STEP-96: step_time = 264.018951 ms, foward_time = 69.552132, backward_time = 191.100922
+STEP-97: step_time = 263.862274 ms, foward_time = 69.714943, backward_time = 190.761978
+STEP-98: step_time = 265.078796 ms, foward_time = 69.956612, backward_time = 191.631363
+STEP-99: step_time = 264.858612 ms, foward_time = 69.659645, backward_time = 191.794174
+
+ mix_moe gpt2 16 [Summary] Average synchronized step_time = 263.6995590209961 ms,
+local_rank 0
+world_rank 0
+world_size 4
+local_rank 1
+world_rank 1
+world_size 4
+local_rank 2
+world_rank 2
+world_size 4
+local_rank 3
+world_rank 3
+world_size 4
+ddp
+ddp
+ddp
+ddp
+STEP-0: step_time = 995.045349 ms, foward_time = 830.393372, backward_time = 164.637695
+STEP-1: step_time = 208.295929 ms, foward_time = 64.596992, backward_time = 143.686661
+STEP-2: step_time = 200.893433 ms, foward_time = 61.942783, backward_time = 138.936325
+STEP-3: step_time = 204.384262 ms, foward_time = 61.873154, backward_time = 142.497787
+STEP-4: step_time = 202.392578 ms, foward_time = 63.395840, backward_time = 138.983429
+STEP-5: step_time = 202.885117 ms, foward_time = 62.069759, backward_time = 140.791809
+STEP-6: step_time = 199.029755 ms, foward_time = 63.198208, backward_time = 135.806976
+STEP-7: step_time = 201.741318 ms, foward_time = 61.833218, backward_time = 139.894791
+STEP-8: step_time = 197.506042 ms, foward_time = 64.108543, backward_time = 133.384186
+STEP-9: step_time = 201.411591 ms, foward_time = 62.298111, backward_time = 139.100159
+STEP-10: step_time = 199.634949 ms, foward_time = 62.070786, backward_time = 137.551865
+STEP-11: step_time = 199.991302 ms, foward_time = 64.203773, backward_time = 135.774200
+STEP-12: step_time = 202.722305 ms, foward_time = 62.047234, backward_time = 140.661758
+STEP-13: step_time = 203.446274 ms, foward_time = 61.864960, backward_time = 141.566971
+STEP-14: step_time = 199.189499 ms, foward_time = 62.215168, backward_time = 136.960007
+STEP-15: step_time = 199.556091 ms, foward_time = 62.027775, backward_time = 137.513977
+STEP-16: step_time = 199.582718 ms, foward_time = 61.418495, backward_time = 138.150909
+STEP-17: step_time = 198.672379 ms, foward_time = 61.934593, backward_time = 136.724487
+STEP-18: step_time = 198.004730 ms, foward_time = 62.011391, backward_time = 135.979004
+STEP-19: step_time = 199.027710 ms, foward_time = 65.743874, backward_time = 133.269501
+STEP-20: step_time = 201.645050 ms, foward_time = 62.160896, backward_time = 139.470840
+STEP-21: step_time = 196.646912 ms, foward_time = 61.903873, backward_time = 134.729721
+STEP-22: step_time = 198.851578 ms, foward_time = 61.997055, backward_time = 136.840195
+STEP-23: step_time = 201.314301 ms, foward_time = 63.577087, backward_time = 137.723907
+STEP-24: step_time = 198.841339 ms, foward_time = 64.835587, backward_time = 133.992447
+STEP-25: step_time = 197.871613 ms, foward_time = 62.233601, backward_time = 135.625732
+STEP-26: step_time = 200.389633 ms, foward_time = 61.840385, backward_time = 138.535934
+STEP-27: step_time = 194.963455 ms, foward_time = 61.769730, backward_time = 133.180420
+STEP-28: step_time = 195.539963 ms, foward_time = 62.107647, backward_time = 133.419006
+STEP-29: step_time = 198.744064 ms, foward_time = 62.099457, backward_time = 136.631302
+STEP-30: step_time = 198.257660 ms, foward_time = 62.013439, backward_time = 136.229889
+STEP-31: step_time = 196.068359 ms, foward_time = 62.047234, backward_time = 134.006790
+STEP-32: step_time = 197.206009 ms, foward_time = 62.009342, backward_time = 135.183365
+STEP-33: step_time = 195.475449 ms, foward_time = 62.779392, backward_time = 132.682755
+STEP-34: step_time = 196.039673 ms, foward_time = 62.232574, backward_time = 133.793793
+STEP-35: step_time = 198.380539 ms, foward_time = 63.025150, backward_time = 135.342087
+STEP-36: step_time = 198.704132 ms, foward_time = 64.651260, backward_time = 134.039551
+STEP-37: step_time = 197.956604 ms, foward_time = 64.695297, backward_time = 133.248001
+STEP-38: step_time = 197.548035 ms, foward_time = 64.581635, backward_time = 132.952057
+STEP-39: step_time = 195.159042 ms, foward_time = 63.173634, backward_time = 131.972092
+STEP-40: step_time = 195.221497 ms, foward_time = 64.008194, backward_time = 131.190781
+STEP-41: step_time = 196.303879 ms, foward_time = 62.251007, backward_time = 134.039551
+STEP-42: step_time = 197.571579 ms, foward_time = 62.047234, backward_time = 135.511047
+STEP-43: step_time = 196.014084 ms, foward_time = 64.607231, backward_time = 131.393539
+STEP-44: step_time = 195.417084 ms, foward_time = 62.219265, backward_time = 133.174271
+STEP-45: step_time = 196.657150 ms, foward_time = 62.351360, backward_time = 134.292480
+STEP-46: step_time = 195.553284 ms, foward_time = 61.860863, backward_time = 133.680130
+STEP-47: step_time = 199.073792 ms, foward_time = 62.103554, backward_time = 136.956924
+STEP-48: step_time = 196.297729 ms, foward_time = 62.183426, backward_time = 134.099976
+STEP-49: step_time = 194.918396 ms, foward_time = 62.429184, backward_time = 132.475906
+STEP-50: step_time = 197.078018 ms, foward_time = 62.056450, backward_time = 134.998016
+STEP-51: step_time = 196.300797 ms, foward_time = 65.240067, backward_time = 131.047424
+STEP-52: step_time = 200.969223 ms, foward_time = 62.246910, backward_time = 138.708984
+STEP-53: step_time = 196.476929 ms, foward_time = 62.059521, backward_time = 134.403076
+STEP-54: step_time = 196.376572 ms, foward_time = 62.146561, backward_time = 134.216705
+STEP-55: step_time = 198.503418 ms, foward_time = 62.379009, backward_time = 136.112122
+STEP-56: step_time = 197.785599 ms, foward_time = 64.545792, backward_time = 133.225479
+STEP-57: step_time = 196.256775 ms, foward_time = 62.300159, backward_time = 133.942276
+STEP-58: step_time = 196.161530 ms, foward_time = 64.046082, backward_time = 132.102142
+STEP-59: step_time = 196.519943 ms, foward_time = 63.823872, backward_time = 132.682755
+STEP-60: step_time = 197.580795 ms, foward_time = 64.748543, backward_time = 132.818939
+STEP-61: step_time = 196.853760 ms, foward_time = 64.521217, backward_time = 132.318207
+STEP-62: step_time = 193.699844 ms, foward_time = 63.411201, backward_time = 130.275330
+STEP-63: step_time = 196.039673 ms, foward_time = 62.052353, backward_time = 133.974014
+STEP-64: step_time = 195.284988 ms, foward_time = 64.499710, backward_time = 130.770950
+STEP-65: step_time = 196.146179 ms, foward_time = 63.668224, backward_time = 132.464645
+STEP-66: step_time = 198.367233 ms, foward_time = 62.161919, backward_time = 136.182785
+STEP-67: step_time = 197.949432 ms, foward_time = 65.251328, backward_time = 132.683777
+STEP-68: step_time = 197.447678 ms, foward_time = 64.899071, backward_time = 132.534271
+STEP-69: step_time = 196.182022 ms, foward_time = 61.933567, backward_time = 134.236160
+STEP-70: step_time = 195.569656 ms, foward_time = 62.166016, backward_time = 133.390335
+STEP-71: step_time = 195.553284 ms, foward_time = 62.009342, backward_time = 133.530624
+STEP-72: step_time = 195.466248 ms, foward_time = 61.932545, backward_time = 133.520386
+STEP-73: step_time = 198.020096 ms, foward_time = 61.862911, backward_time = 136.142853
+STEP-74: step_time = 196.832260 ms, foward_time = 61.828094, backward_time = 134.990845
+STEP-75: step_time = 204.707840 ms, foward_time = 61.945854, backward_time = 142.748672
+STEP-76: step_time = 206.891006 ms, foward_time = 67.487747, backward_time = 139.385849
+STEP-77: step_time = 200.108032 ms, foward_time = 63.094784, backward_time = 136.999939
+STEP-78: step_time = 198.554626 ms, foward_time = 62.070786, backward_time = 136.470535
+STEP-79: step_time = 201.346054 ms, foward_time = 61.871105, backward_time = 139.461639
+STEP-80: step_time = 201.152512 ms, foward_time = 61.725697, backward_time = 139.413498
+STEP-81: step_time = 199.682053 ms, foward_time = 64.274429, backward_time = 135.393280
+STEP-82: step_time = 201.497604 ms, foward_time = 64.203773, backward_time = 137.280518
+STEP-83: step_time = 197.239807 ms, foward_time = 63.667198, backward_time = 133.558273
+STEP-84: step_time = 199.459839 ms, foward_time = 61.954048, backward_time = 137.492477
+STEP-85: step_time = 198.468613 ms, foward_time = 61.860863, backward_time = 136.594437
+STEP-86: step_time = 200.684540 ms, foward_time = 62.279678, backward_time = 138.392578
+STEP-87: step_time = 199.937027 ms, foward_time = 63.712257, backward_time = 136.210434
+STEP-88: step_time = 199.237625 ms, foward_time = 63.560703, backward_time = 135.663620
+STEP-89: step_time = 199.153671 ms, foward_time = 62.658562, backward_time = 136.481796
+STEP-90: step_time = 199.691269 ms, foward_time = 64.232445, backward_time = 135.445511
+STEP-91: step_time = 199.942139 ms, foward_time = 62.008320, backward_time = 137.920517
+STEP-92: step_time = 199.361542 ms, foward_time = 64.704514, backward_time = 134.644730
+STEP-93: step_time = 198.798340 ms, foward_time = 64.338943, backward_time = 134.445053
+STEP-94: step_time = 197.756927 ms, foward_time = 64.610306, backward_time = 133.133316
+STEP-95: step_time = 197.703674 ms, foward_time = 61.755390, backward_time = 135.934982
+STEP-96: step_time = 201.034760 ms, foward_time = 62.415871, backward_time = 138.605576
+STEP-97: step_time = 202.208252 ms, foward_time = 63.594498, backward_time = 138.599426
+STEP-98: step_time = 199.319550 ms, foward_time = 63.727615, backward_time = 135.577606
+STEP-99: step_time = 197.928955 ms, foward_time = 63.980545, backward_time = 133.935104
+
+ naive bert 16 [Summary] Average synchronized step_time = 198.0719446818034 ms,
+STEP-0: step_time = 1378.086914 ms, foward_time = 1124.676636, backward_time = 253.395966
+STEP-1: step_time = 453.704712 ms, foward_time = 200.399872, backward_time = 253.290497
+STEP-2: step_time = 450.575348 ms, foward_time = 198.752258, backward_time = 251.808762
+STEP-3: step_time = 449.973236 ms, foward_time = 198.605820, backward_time = 251.354111
+STEP-4: step_time = 440.969208 ms, foward_time = 194.877441, backward_time = 246.078461
+STEP-5: step_time = 437.654541 ms, foward_time = 190.181381, backward_time = 247.460861
+STEP-6: step_time = 443.588623 ms, foward_time = 193.780731, backward_time = 249.794556
+STEP-7: step_time = 445.087738 ms, foward_time = 196.813828, backward_time = 248.260605
+STEP-8: step_time = 445.586426 ms, foward_time = 197.097473, backward_time = 248.474625
+STEP-9: step_time = 449.586182 ms, foward_time = 201.337860, backward_time = 248.236038
+STEP-10: step_time = 437.801971 ms, foward_time = 193.645569, backward_time = 244.141052
+STEP-11: step_time = 454.407166 ms, foward_time = 198.025223, backward_time = 256.368652
+STEP-12: step_time = 442.638336 ms, foward_time = 191.288315, backward_time = 251.317245
+STEP-13: step_time = 444.742645 ms, foward_time = 192.635910, backward_time = 252.092422
+STEP-14: step_time = 441.881592 ms, foward_time = 191.478790, backward_time = 250.390533
+STEP-15: step_time = 445.968384 ms, foward_time = 191.915009, backward_time = 254.040070
+STEP-16: step_time = 448.711670 ms, foward_time = 193.560577, backward_time = 255.136765
+STEP-17: step_time = 448.958466 ms, foward_time = 194.247681, backward_time = 254.698502
+STEP-18: step_time = 449.005554 ms, foward_time = 193.662979, backward_time = 255.329285
+STEP-19: step_time = 446.500854 ms, foward_time = 192.671738, backward_time = 253.815811
+STEP-20: step_time = 446.100494 ms, foward_time = 193.959930, backward_time = 252.127228
+STEP-21: step_time = 446.399475 ms, foward_time = 194.164734, backward_time = 252.221436
+STEP-22: step_time = 446.183411 ms, foward_time = 191.731705, backward_time = 254.438400
+STEP-23: step_time = 444.204041 ms, foward_time = 191.928314, backward_time = 252.262405
+STEP-24: step_time = 446.854156 ms, foward_time = 193.529861, backward_time = 253.310974
+STEP-25: step_time = 445.601807 ms, foward_time = 193.595398, backward_time = 251.994110
+STEP-26: step_time = 444.764160 ms, foward_time = 192.708603, backward_time = 252.041214
+STEP-27: step_time = 445.631500 ms, foward_time = 192.960510, backward_time = 252.658691
+STEP-28: step_time = 443.841522 ms, foward_time = 191.037445, backward_time = 252.790787
+STEP-29: step_time = 442.567688 ms, foward_time = 190.278656, backward_time = 252.275711
+STEP-30: step_time = 443.592712 ms, foward_time = 193.089539, backward_time = 250.489853
+STEP-31: step_time = 443.603973 ms, foward_time = 191.597565, backward_time = 251.988998
+STEP-32: step_time = 444.104706 ms, foward_time = 193.050629, backward_time = 251.041794
+STEP-33: step_time = 443.706360 ms, foward_time = 191.805435, backward_time = 251.888641
+STEP-34: step_time = 444.982269 ms, foward_time = 192.396286, backward_time = 252.562439
+STEP-35: step_time = 446.707703 ms, foward_time = 193.639420, backward_time = 253.054977
+STEP-36: step_time = 449.161224 ms, foward_time = 195.417084, backward_time = 253.729797
+STEP-37: step_time = 445.892609 ms, foward_time = 193.565689, backward_time = 252.312576
+STEP-38: step_time = 444.790771 ms, foward_time = 192.386047, backward_time = 252.392441
+STEP-39: step_time = 437.263367 ms, foward_time = 189.500412, backward_time = 247.749634
+STEP-40: step_time = 442.832886 ms, foward_time = 191.931396, backward_time = 250.888199
+STEP-41: step_time = 441.296906 ms, foward_time = 192.303101, backward_time = 248.981506
+STEP-42: step_time = 448.626678 ms, foward_time = 194.737152, backward_time = 253.876221
+STEP-43: step_time = 443.925507 ms, foward_time = 192.224258, backward_time = 251.687943
+STEP-44: step_time = 446.369781 ms, foward_time = 193.283066, backward_time = 253.074432
+STEP-45: step_time = 446.407684 ms, foward_time = 193.837051, backward_time = 252.557312
+STEP-46: step_time = 444.103668 ms, foward_time = 192.529404, backward_time = 251.561981
+STEP-47: step_time = 444.009460 ms, foward_time = 191.741959, backward_time = 252.255234
+STEP-48: step_time = 444.724213 ms, foward_time = 192.366592, backward_time = 252.343292
+STEP-49: step_time = 454.717438 ms, foward_time = 201.216003, backward_time = 253.488129
+STEP-50: step_time = 448.670715 ms, foward_time = 198.091782, backward_time = 250.562561
+STEP-51: step_time = 447.705078 ms, foward_time = 194.723846, backward_time = 252.966919
+STEP-52: step_time = 445.390839 ms, foward_time = 194.212860, backward_time = 251.164673
+STEP-53: step_time = 440.271881 ms, foward_time = 190.602234, backward_time = 249.657349
+STEP-54: step_time = 440.142853 ms, foward_time = 190.100479, backward_time = 250.030075
+STEP-55: step_time = 443.063293 ms, foward_time = 192.014343, backward_time = 251.035645
+STEP-56: step_time = 437.142517 ms, foward_time = 188.539902, backward_time = 248.589310
+STEP-57: step_time = 443.254791 ms, foward_time = 193.301498, backward_time = 249.940994
+STEP-58: step_time = 443.497467 ms, foward_time = 189.758469, backward_time = 253.726715
+STEP-59: step_time = 446.148621 ms, foward_time = 193.988602, backward_time = 252.146683
+STEP-60: step_time = 443.424774 ms, foward_time = 188.951553, backward_time = 254.460922
+STEP-61: step_time = 442.301453 ms, foward_time = 193.510406, backward_time = 248.777725
+STEP-62: step_time = 432.736267 ms, foward_time = 188.875778, backward_time = 243.847168
+STEP-63: step_time = 439.487488 ms, foward_time = 191.304703, backward_time = 248.168442
+STEP-64: step_time = 438.282227 ms, foward_time = 191.873032, backward_time = 246.394882
+STEP-65: step_time = 437.699585 ms, foward_time = 192.557053, backward_time = 245.129211
+STEP-66: step_time = 440.270844 ms, foward_time = 190.114822, backward_time = 250.143738
+STEP-67: step_time = 442.115082 ms, foward_time = 192.607239, backward_time = 249.495544
+STEP-68: step_time = 439.687164 ms, foward_time = 193.719299, backward_time = 245.954559
+STEP-69: step_time = 440.565765 ms, foward_time = 193.340424, backward_time = 247.213058
+STEP-70: step_time = 441.464844 ms, foward_time = 191.043579, backward_time = 250.408966
+STEP-71: step_time = 440.473602 ms, foward_time = 193.047546, backward_time = 247.413757
+STEP-72: step_time = 438.692871 ms, foward_time = 191.215622, backward_time = 247.463943
+STEP-73: step_time = 442.720245 ms, foward_time = 193.345535, backward_time = 249.360382
+STEP-74: step_time = 437.488647 ms, foward_time = 190.881790, backward_time = 246.593536
+STEP-75: step_time = 442.585083 ms, foward_time = 192.327682, backward_time = 250.244095
+STEP-76: step_time = 436.567047 ms, foward_time = 191.322113, backward_time = 245.230591
+STEP-77: step_time = 442.346497 ms, foward_time = 193.310715, backward_time = 249.022461
+STEP-78: step_time = 438.636536 ms, foward_time = 192.598022, backward_time = 246.024185
+STEP-79: step_time = 441.935883 ms, foward_time = 192.800766, backward_time = 249.122818
+STEP-80: step_time = 441.806854 ms, foward_time = 193.863678, backward_time = 247.931900
+STEP-81: step_time = 442.580994 ms, foward_time = 193.254395, backward_time = 249.313278
+STEP-82: step_time = 441.740295 ms, foward_time = 192.609283, backward_time = 249.116669
+STEP-83: step_time = 442.089478 ms, foward_time = 192.416763, backward_time = 249.657349
+STEP-84: step_time = 443.582458 ms, foward_time = 193.864700, backward_time = 249.705475
+STEP-85: step_time = 440.613892 ms, foward_time = 193.038330, backward_time = 247.561218
+STEP-86: step_time = 442.782715 ms, foward_time = 194.114563, backward_time = 248.654846
+STEP-87: step_time = 442.912781 ms, foward_time = 194.787323, backward_time = 248.112122
+STEP-88: step_time = 441.932800 ms, foward_time = 193.369095, backward_time = 248.550400
+STEP-89: step_time = 440.284149 ms, foward_time = 192.328705, backward_time = 247.943161
+STEP-90: step_time = 440.866821 ms, foward_time = 192.252930, backward_time = 248.599548
+STEP-91: step_time = 441.560059 ms, foward_time = 193.593338, backward_time = 247.953415
+STEP-92: step_time = 442.035187 ms, foward_time = 191.909882, backward_time = 250.112000
+STEP-93: step_time = 441.581573 ms, foward_time = 193.890305, backward_time = 247.676926
+STEP-94: step_time = 441.433075 ms, foward_time = 193.258499, backward_time = 248.162308
+STEP-95: step_time = 442.270721 ms, foward_time = 193.494019, backward_time = 248.764420
+STEP-96: step_time = 438.933502 ms, foward_time = 191.074310, backward_time = 247.844864
+STEP-97: step_time = 444.762115 ms, foward_time = 195.454971, backward_time = 249.292801
+STEP-98: step_time = 439.786499 ms, foward_time = 191.187973, backward_time = 248.585220
+STEP-99: step_time = 436.121613 ms, foward_time = 189.031418, backward_time = 247.077881
+
+ fastermoe bert 16 [Summary] Average synchronized step_time = 442.0243626912435 ms,
+0 4 init success
+1 4 init success
+3 4 init success
+2 4 init success
+ddp
+ddp
+ddp
+ddp
+STEP-0: step_time = 1186.315308 ms, foward_time = 971.109375, backward_time = 215.182343
+STEP-1: step_time = 250.645508 ms, foward_time = 93.212669, backward_time = 157.419525
+STEP-2: step_time = 248.404999 ms, foward_time = 91.164673, backward_time = 157.227005
+STEP-3: step_time = 248.557571 ms, foward_time = 91.137024, backward_time = 157.408249
+STEP-4: step_time = 248.774658 ms, foward_time = 90.751999, backward_time = 158.010361
+STEP-5: step_time = 249.756668 ms, foward_time = 90.875900, backward_time = 158.868484
+STEP-6: step_time = 248.399872 ms, foward_time = 89.359360, backward_time = 159.028229
+STEP-7: step_time = 246.350845 ms, foward_time = 89.177086, backward_time = 157.161469
+STEP-8: step_time = 250.107910 ms, foward_time = 90.660866, backward_time = 159.434753
+STEP-9: step_time = 247.390213 ms, foward_time = 89.487358, backward_time = 157.891586
+STEP-10: step_time = 245.227524 ms, foward_time = 87.164925, backward_time = 158.048264
+STEP-11: step_time = 243.246078 ms, foward_time = 85.477379, backward_time = 157.754364
+STEP-12: step_time = 244.876282 ms, foward_time = 85.698563, backward_time = 159.165436
+STEP-13: step_time = 243.526657 ms, foward_time = 85.251076, backward_time = 158.263290
+STEP-14: step_time = 244.526077 ms, foward_time = 86.438911, backward_time = 158.074875
+STEP-15: step_time = 256.808960 ms, foward_time = 96.468994, backward_time = 160.327682
+STEP-16: step_time = 246.620163 ms, foward_time = 87.723007, backward_time = 158.884857
+STEP-17: step_time = 246.631424 ms, foward_time = 86.948868, backward_time = 159.669250
+STEP-18: step_time = 247.428101 ms, foward_time = 86.558723, backward_time = 160.857086
+STEP-19: step_time = 249.693192 ms, foward_time = 89.529343, backward_time = 160.145401
+STEP-20: step_time = 252.694534 ms, foward_time = 91.924477, backward_time = 160.752640
+STEP-21: step_time = 249.518082 ms, foward_time = 90.265602, backward_time = 159.235077
+STEP-22: step_time = 249.485306 ms, foward_time = 89.741310, backward_time = 159.725571
+STEP-23: step_time = 250.009598 ms, foward_time = 89.398270, backward_time = 160.593918
+STEP-24: step_time = 248.754181 ms, foward_time = 88.269821, backward_time = 160.466949
+STEP-25: step_time = 251.503616 ms, foward_time = 90.128387, backward_time = 161.357819
+STEP-26: step_time = 250.176514 ms, foward_time = 89.733124, backward_time = 160.424957
+STEP-27: step_time = 248.688644 ms, foward_time = 89.352196, backward_time = 159.319046
+STEP-28: step_time = 248.395782 ms, foward_time = 89.103363, backward_time = 159.275009
+STEP-29: step_time = 247.399429 ms, foward_time = 88.190979, backward_time = 159.191040
+STEP-30: step_time = 248.803329 ms, foward_time = 89.113602, backward_time = 159.672318
+STEP-31: step_time = 249.054214 ms, foward_time = 89.445374, backward_time = 159.591431
+STEP-32: step_time = 248.532990 ms, foward_time = 88.888321, backward_time = 159.627258
+STEP-33: step_time = 250.877945 ms, foward_time = 89.085953, backward_time = 161.774597
+STEP-34: step_time = 249.539581 ms, foward_time = 89.936897, backward_time = 159.585281
+STEP-35: step_time = 248.762375 ms, foward_time = 88.973312, backward_time = 159.771652
+STEP-36: step_time = 248.284164 ms, foward_time = 89.040894, backward_time = 159.226883
+STEP-37: step_time = 247.945221 ms, foward_time = 88.860672, backward_time = 159.067139
+STEP-38: step_time = 248.602631 ms, foward_time = 88.903679, backward_time = 159.681534
+STEP-39: step_time = 250.399750 ms, foward_time = 89.617409, backward_time = 160.764923
+STEP-40: step_time = 248.879105 ms, foward_time = 89.262077, backward_time = 159.597565
+STEP-41: step_time = 247.583740 ms, foward_time = 88.102913, backward_time = 159.463425
+STEP-42: step_time = 251.992065 ms, foward_time = 91.552765, backward_time = 160.421890
+STEP-43: step_time = 248.374268 ms, foward_time = 89.443329, backward_time = 158.911484
+STEP-44: step_time = 248.295425 ms, foward_time = 89.092094, backward_time = 159.185913
+STEP-45: step_time = 248.412155 ms, foward_time = 89.068542, backward_time = 159.327225
+STEP-46: step_time = 249.020416 ms, foward_time = 88.407043, backward_time = 160.594940
+STEP-47: step_time = 250.240005 ms, foward_time = 90.443779, backward_time = 159.778809
+STEP-48: step_time = 248.398849 ms, foward_time = 89.188354, backward_time = 159.193085
+STEP-49: step_time = 248.763397 ms, foward_time = 88.965118, backward_time = 159.780869
+STEP-50: step_time = 250.593277 ms, foward_time = 88.509438, backward_time = 162.066437
+STEP-51: step_time = 249.553925 ms, foward_time = 89.325569, backward_time = 160.209915
+STEP-52: step_time = 249.439240 ms, foward_time = 88.592384, backward_time = 160.828415
+STEP-53: step_time = 248.030212 ms, foward_time = 88.871933, backward_time = 159.140869
+STEP-54: step_time = 250.247162 ms, foward_time = 89.095169, backward_time = 161.134598
+STEP-55: step_time = 247.985153 ms, foward_time = 89.263107, backward_time = 158.704636
+STEP-56: step_time = 247.655426 ms, foward_time = 88.421379, backward_time = 159.217667
+STEP-57: step_time = 247.451645 ms, foward_time = 87.958527, backward_time = 159.475708
+STEP-58: step_time = 248.054779 ms, foward_time = 88.899582, backward_time = 159.138809
+STEP-59: step_time = 248.908798 ms, foward_time = 88.766464, backward_time = 160.124924
+STEP-60: step_time = 248.601593 ms, foward_time = 89.012222, backward_time = 159.572998
+STEP-61: step_time = 247.946243 ms, foward_time = 88.717316, backward_time = 159.212540
+STEP-62: step_time = 248.259583 ms, foward_time = 89.042946, backward_time = 159.199234
+STEP-63: step_time = 247.436295 ms, foward_time = 88.330238, backward_time = 159.089661
+STEP-64: step_time = 248.038406 ms, foward_time = 88.993790, backward_time = 159.027206
+STEP-65: step_time = 247.483398 ms, foward_time = 88.845314, backward_time = 158.620667
+STEP-66: step_time = 251.596802 ms, foward_time = 92.702721, backward_time = 158.877701
+STEP-67: step_time = 246.249466 ms, foward_time = 88.570877, backward_time = 157.665283
+STEP-68: step_time = 244.704254 ms, foward_time = 87.508995, backward_time = 157.184006
+STEP-69: step_time = 245.331970 ms, foward_time = 86.903809, backward_time = 158.414841
+STEP-70: step_time = 245.978119 ms, foward_time = 87.424004, backward_time = 158.540802
+STEP-71: step_time = 243.101700 ms, foward_time = 86.230019, backward_time = 156.859390
+STEP-72: step_time = 244.920319 ms, foward_time = 87.960579, backward_time = 156.948486
+STEP-73: step_time = 243.415039 ms, foward_time = 86.521858, backward_time = 156.879868
+STEP-74: step_time = 245.467133 ms, foward_time = 86.457344, backward_time = 158.997498
+STEP-75: step_time = 254.230530 ms, foward_time = 95.403008, backward_time = 158.814209
+STEP-76: step_time = 256.377869 ms, foward_time = 96.278526, backward_time = 160.087036
+STEP-77: step_time = 254.676987 ms, foward_time = 95.837181, backward_time = 158.826492
+STEP-78: step_time = 256.478210 ms, foward_time = 96.432129, backward_time = 160.033798
+STEP-79: step_time = 254.251007 ms, foward_time = 95.517693, backward_time = 158.720001
+STEP-80: step_time = 254.670853 ms, foward_time = 96.382973, backward_time = 158.275589
+STEP-81: step_time = 254.433273 ms, foward_time = 96.209923, backward_time = 158.210052
+STEP-82: step_time = 256.023560 ms, foward_time = 96.323586, backward_time = 159.687683
+STEP-83: step_time = 256.330750 ms, foward_time = 95.527939, backward_time = 160.790527
+STEP-84: step_time = 253.942780 ms, foward_time = 94.284798, backward_time = 159.629318
+STEP-85: step_time = 250.374146 ms, foward_time = 88.666115, backward_time = 161.695740
+STEP-86: step_time = 251.113480 ms, foward_time = 89.729027, backward_time = 161.372162
+STEP-87: step_time = 245.804031 ms, foward_time = 84.995071, backward_time = 160.795654
+STEP-88: step_time = 246.136826 ms, foward_time = 85.184509, backward_time = 160.940033
+STEP-89: step_time = 245.806076 ms, foward_time = 85.728256, backward_time = 160.064514
+STEP-90: step_time = 246.207489 ms, foward_time = 85.446655, backward_time = 160.748550
+STEP-91: step_time = 246.360062 ms, foward_time = 84.378624, backward_time = 161.969147
+STEP-92: step_time = 248.771591 ms, foward_time = 85.124100, backward_time = 163.635193
+STEP-93: step_time = 250.711044 ms, foward_time = 86.304771, backward_time = 164.393982
+STEP-94: step_time = 250.963974 ms, foward_time = 86.017021, backward_time = 164.934662
+STEP-95: step_time = 246.177795 ms, foward_time = 84.364288, backward_time = 161.800186
+STEP-96: step_time = 245.492737 ms, foward_time = 84.374527, backward_time = 161.104889
+STEP-97: step_time = 244.040710 ms, foward_time = 83.816444, backward_time = 160.210938
+STEP-98: step_time = 244.265991 ms, foward_time = 84.287491, backward_time = 159.965179
+STEP-99: step_time = 245.032959 ms, foward_time = 83.646461, backward_time = 161.374207
+
+ mix_moe bert 16 [Summary] Average synchronized step_time = 248.91806818644207 ms,
+local_rank 0
+world_rank 0
+world_size 4
+local_rank 1
+world_rank 1
+world_size 4
+local_rank 2
+world_rank 2
+world_size 4
+local_rank 3
+world_rank 3
+world_size 4
+STEP-0: step_time = 767.219727 ms, foward_time = 638.980103, backward_time = 128.226303
+STEP-1: step_time = 119.293953 ms, foward_time = 28.541952, backward_time = 90.738686
+STEP-2: step_time = 101.922813 ms, foward_time = 35.178497, backward_time = 66.728958
+STEP-3: step_time = 102.686722 ms, foward_time = 34.220032, backward_time = 68.450302
+STEP-4: step_time = 100.102142 ms, foward_time = 34.907135, backward_time = 65.178627
+STEP-5: step_time = 99.152893 ms, foward_time = 34.523136, backward_time = 64.613373
+STEP-6: step_time = 97.040382 ms, foward_time = 33.075199, backward_time = 63.947777
+STEP-7: step_time = 98.214912 ms, foward_time = 34.271233, backward_time = 63.928322
+STEP-8: step_time = 98.377731 ms, foward_time = 35.063808, backward_time = 63.297535
+STEP-9: step_time = 98.220032 ms, foward_time = 34.119678, backward_time = 64.082947
+STEP-10: step_time = 97.565697 ms, foward_time = 34.765823, backward_time = 62.782463
+STEP-11: step_time = 98.664452 ms, foward_time = 37.436417, backward_time = 61.210625
+STEP-12: step_time = 96.431107 ms, foward_time = 34.768894, backward_time = 61.645824
+STEP-13: step_time = 101.173248 ms, foward_time = 34.252800, backward_time = 66.903038
+STEP-14: step_time = 97.373184 ms, foward_time = 35.141632, backward_time = 62.213120
+STEP-15: step_time = 94.632957 ms, foward_time = 34.714622, backward_time = 59.899902
+STEP-16: step_time = 95.579140 ms, foward_time = 35.103745, backward_time = 60.457985
+STEP-17: step_time = 95.687683 ms, foward_time = 35.055614, backward_time = 60.614655
+STEP-18: step_time = 92.619774 ms, foward_time = 32.173058, backward_time = 60.434433
+STEP-19: step_time = 96.463875 ms, foward_time = 31.860737, backward_time = 64.589821
+STEP-20: step_time = 92.428291 ms, foward_time = 31.198208, backward_time = 61.216766
+STEP-21: step_time = 92.662781 ms, foward_time = 31.299583, backward_time = 61.349888
+STEP-22: step_time = 96.957443 ms, foward_time = 30.090240, backward_time = 66.853889
+STEP-23: step_time = 93.788162 ms, foward_time = 30.310400, backward_time = 63.463425
+STEP-24: step_time = 92.105728 ms, foward_time = 31.575041, backward_time = 60.518398
+STEP-25: step_time = 90.058754 ms, foward_time = 28.888063, backward_time = 61.157375
+STEP-26: step_time = 95.632385 ms, foward_time = 35.338242, backward_time = 60.276737
+STEP-27: step_time = 96.786430 ms, foward_time = 35.250175, backward_time = 61.519871
+STEP-28: step_time = 97.289215 ms, foward_time = 32.626686, backward_time = 64.647171
+STEP-29: step_time = 95.781891 ms, foward_time = 34.011135, backward_time = 61.753345
+STEP-30: step_time = 92.298241 ms, foward_time = 31.378431, backward_time = 60.901375
+STEP-31: step_time = 92.444672 ms, foward_time = 31.393791, backward_time = 61.033470
+STEP-32: step_time = 90.654716 ms, foward_time = 27.973633, backward_time = 62.667774
+STEP-33: step_time = 92.349442 ms, foward_time = 27.533312, backward_time = 64.802818
+STEP-34: step_time = 91.586563 ms, foward_time = 27.489281, backward_time = 64.082947
+STEP-35: step_time = 93.877251 ms, foward_time = 27.261951, backward_time = 66.601982
+STEP-36: step_time = 94.077950 ms, foward_time = 27.254784, backward_time = 66.809853
+STEP-37: step_time = 99.130371 ms, foward_time = 27.271168, backward_time = 71.844864
+STEP-38: step_time = 91.638786 ms, foward_time = 27.289600, backward_time = 64.334846
+STEP-39: step_time = 96.401405 ms, foward_time = 35.225601, backward_time = 61.155327
+STEP-40: step_time = 97.108994 ms, foward_time = 27.332607, backward_time = 69.764099
+STEP-41: step_time = 92.700668 ms, foward_time = 27.150335, backward_time = 65.537025
+STEP-42: step_time = 86.737923 ms, foward_time = 27.121664, backward_time = 59.602943
+STEP-43: step_time = 91.235329 ms, foward_time = 27.269119, backward_time = 63.952896
+STEP-44: step_time = 87.393280 ms, foward_time = 28.376064, backward_time = 59.003902
+STEP-45: step_time = 86.844414 ms, foward_time = 27.211777, backward_time = 59.620354
+STEP-46: step_time = 92.264450 ms, foward_time = 27.233280, backward_time = 65.018883
+STEP-47: step_time = 92.824577 ms, foward_time = 29.940737, backward_time = 62.869503
+STEP-48: step_time = 87.861244 ms, foward_time = 27.403263, backward_time = 60.444672
+STEP-49: step_time = 86.882301 ms, foward_time = 27.252735, backward_time = 59.616257
+STEP-50: step_time = 95.332352 ms, foward_time = 27.298817, backward_time = 68.019203
+STEP-51: step_time = 93.832191 ms, foward_time = 27.289600, backward_time = 66.529282
+STEP-52: step_time = 90.578941 ms, foward_time = 31.578112, backward_time = 58.988544
+STEP-53: step_time = 86.766594 ms, foward_time = 27.049984, backward_time = 59.703297
+STEP-54: step_time = 87.346176 ms, foward_time = 27.177984, backward_time = 60.154881
+STEP-55: step_time = 93.295616 ms, foward_time = 31.421440, backward_time = 61.844479
+STEP-56: step_time = 87.944191 ms, foward_time = 27.627520, backward_time = 60.303360
+STEP-57: step_time = 90.375168 ms, foward_time = 30.603264, backward_time = 59.758591
+STEP-58: step_time = 91.214851 ms, foward_time = 27.236353, backward_time = 63.965183
+STEP-59: step_time = 86.957054 ms, foward_time = 27.173887, backward_time = 59.769855
+STEP-60: step_time = 88.101891 ms, foward_time = 27.328512, backward_time = 60.760063
+STEP-61: step_time = 94.496765 ms, foward_time = 32.024574, backward_time = 62.457855
+STEP-62: step_time = 92.320770 ms, foward_time = 30.930944, backward_time = 61.376511
+STEP-63: step_time = 93.809662 ms, foward_time = 32.571392, backward_time = 61.224960
+STEP-64: step_time = 91.270142 ms, foward_time = 31.594496, backward_time = 59.662334
+STEP-65: step_time = 92.012543 ms, foward_time = 29.698048, backward_time = 62.301186
+STEP-66: step_time = 91.250687 ms, foward_time = 31.974400, backward_time = 59.262978
+STEP-67: step_time = 90.092545 ms, foward_time = 27.168768, backward_time = 62.910465
+STEP-68: step_time = 87.440384 ms, foward_time = 27.116545, backward_time = 60.310528
+STEP-69: step_time = 90.853378 ms, foward_time = 31.383553, backward_time = 59.456512
+STEP-70: step_time = 92.526588 ms, foward_time = 27.225088, backward_time = 65.289215
+STEP-71: step_time = 93.158401 ms, foward_time = 31.543297, backward_time = 61.601791
+STEP-72: step_time = 88.307709 ms, foward_time = 27.284479, backward_time = 61.009918
+STEP-73: step_time = 86.412285 ms, foward_time = 27.063295, backward_time = 59.335678
+STEP-74: step_time = 87.054337 ms, foward_time = 27.254784, backward_time = 59.787266
+STEP-75: step_time = 91.047935 ms, foward_time = 31.789057, backward_time = 59.245567
+STEP-76: step_time = 87.376900 ms, foward_time = 27.173887, backward_time = 60.190720
+STEP-77: step_time = 90.286079 ms, foward_time = 30.879744, backward_time = 59.393024
+STEP-78: step_time = 88.418304 ms, foward_time = 27.561983, backward_time = 60.843006
+STEP-79: step_time = 93.036545 ms, foward_time = 31.347712, backward_time = 61.676544
+STEP-80: step_time = 91.274239 ms, foward_time = 27.320320, backward_time = 63.940609
+STEP-81: step_time = 93.918205 ms, foward_time = 31.104000, backward_time = 62.801922
+STEP-82: step_time = 87.928833 ms, foward_time = 27.475967, backward_time = 60.439552
+STEP-83: step_time = 91.373566 ms, foward_time = 31.772673, backward_time = 59.588608
+STEP-84: step_time = 88.128510 ms, foward_time = 27.239424, backward_time = 60.875774
+STEP-85: step_time = 92.141571 ms, foward_time = 31.990784, backward_time = 60.138496
+STEP-86: step_time = 92.423164 ms, foward_time = 31.797249, backward_time = 60.612610
+STEP-87: step_time = 90.705917 ms, foward_time = 31.527937, backward_time = 59.165695
+STEP-88: step_time = 102.560768 ms, foward_time = 27.319296, backward_time = 75.228157
+STEP-89: step_time = 103.298050 ms, foward_time = 27.012096, backward_time = 76.271614
+STEP-90: step_time = 97.500160 ms, foward_time = 27.001856, backward_time = 70.484993
+STEP-91: step_time = 97.957886 ms, foward_time = 27.236353, backward_time = 70.708221
+STEP-92: step_time = 96.638977 ms, foward_time = 31.679487, backward_time = 64.946175
+STEP-93: step_time = 94.944260 ms, foward_time = 30.820353, backward_time = 64.109566
+STEP-94: step_time = 93.007874 ms, foward_time = 27.308031, backward_time = 65.686531
+STEP-95: step_time = 96.291840 ms, foward_time = 30.939137, backward_time = 65.339394
+STEP-96: step_time = 94.821373 ms, foward_time = 30.678017, backward_time = 64.131073
+STEP-97: step_time = 92.329987 ms, foward_time = 27.046911, backward_time = 65.270782
+STEP-98: step_time = 98.281471 ms, foward_time = 31.211519, backward_time = 67.057663
+STEP-99: step_time = 92.325890 ms, foward_time = 27.024384, backward_time = 65.290237
+
+ naive transformer-xl 64 [Summary] Average synchronized step_time = 91.71037839253744 ms,
+local_rank 0
+world_rank 0
+world_size 4
+local_rank 1
+world_rank 1
+world_size 4
+local_rank 2
+world_rank 2
+world_size 4
+local_rank 3
+world_rank 3
+world_size 4
+STEP-0: step_time = 1794.496460 ms, foward_time = 1575.226318, backward_time = 219.254791
+STEP-1: step_time = 390.556671 ms, foward_time = 197.460999, backward_time = 193.080322
+STEP-2: step_time = 381.150208 ms, foward_time = 186.826752, backward_time = 194.309113
+STEP-3: step_time = 385.721344 ms, foward_time = 192.420868, backward_time = 193.286148
+STEP-4: step_time = 376.731659 ms, foward_time = 184.282104, backward_time = 192.437241
+STEP-5: step_time = 384.180237 ms, foward_time = 190.215164, backward_time = 193.950714
+STEP-6: step_time = 385.901581 ms, foward_time = 191.358978, backward_time = 194.528259
+STEP-7: step_time = 385.990662 ms, foward_time = 191.196167, backward_time = 194.779129
+STEP-8: step_time = 382.649353 ms, foward_time = 187.364349, backward_time = 195.269638
+STEP-9: step_time = 379.695099 ms, foward_time = 184.962051, backward_time = 194.717697
+STEP-10: step_time = 382.422028 ms, foward_time = 187.299835, backward_time = 195.106812
+STEP-11: step_time = 381.494263 ms, foward_time = 188.553223, backward_time = 192.925690
+STEP-12: step_time = 379.275269 ms, foward_time = 186.372101, backward_time = 192.888824
+STEP-13: step_time = 382.457855 ms, foward_time = 187.111420, backward_time = 195.331070
+STEP-14: step_time = 380.791809 ms, foward_time = 187.416580, backward_time = 193.358841
+STEP-15: step_time = 381.094910 ms, foward_time = 188.164093, backward_time = 192.915451
+STEP-16: step_time = 376.901642 ms, foward_time = 181.588989, backward_time = 195.298309
+STEP-17: step_time = 381.274109 ms, foward_time = 187.726852, backward_time = 193.531906
+STEP-18: step_time = 377.054199 ms, foward_time = 181.827591, backward_time = 195.211258
+STEP-19: step_time = 379.257843 ms, foward_time = 185.273346, backward_time = 193.969147
+STEP-20: step_time = 384.807922 ms, foward_time = 190.399490, backward_time = 194.392059
+STEP-21: step_time = 377.351166 ms, foward_time = 182.534149, backward_time = 194.801666
+STEP-22: step_time = 379.781128 ms, foward_time = 186.310654, backward_time = 193.455109
+STEP-23: step_time = 381.893646 ms, foward_time = 186.904572, backward_time = 194.973694
+STEP-24: step_time = 381.603851 ms, foward_time = 186.262527, backward_time = 195.326981
+STEP-25: step_time = 379.737091 ms, foward_time = 186.664963, backward_time = 193.057785
+STEP-26: step_time = 374.467590 ms, foward_time = 181.541885, backward_time = 192.909317
+STEP-27: step_time = 379.192322 ms, foward_time = 186.533890, backward_time = 192.644089
+STEP-28: step_time = 375.700470 ms, foward_time = 181.942276, backward_time = 193.742844
+STEP-29: step_time = 379.382782 ms, foward_time = 185.843719, backward_time = 193.523712
+STEP-30: step_time = 378.339325 ms, foward_time = 185.216003, backward_time = 193.107971
+STEP-31: step_time = 387.207153 ms, foward_time = 187.614212, backward_time = 199.577606
+STEP-32: step_time = 390.368256 ms, foward_time = 192.796677, backward_time = 197.556229
+STEP-33: step_time = 383.742981 ms, foward_time = 189.612030, backward_time = 194.114563
+STEP-34: step_time = 375.562225 ms, foward_time = 181.877762, backward_time = 193.668091
+STEP-35: step_time = 377.173004 ms, foward_time = 182.341629, backward_time = 194.815994
+STEP-36: step_time = 378.158081 ms, foward_time = 183.493637, backward_time = 194.649094
+STEP-37: step_time = 380.195831 ms, foward_time = 187.460602, backward_time = 192.719879
+STEP-38: step_time = 375.073792 ms, foward_time = 181.411835, backward_time = 193.647614
+STEP-39: step_time = 375.592957 ms, foward_time = 183.389191, backward_time = 192.188416
+STEP-40: step_time = 374.315002 ms, foward_time = 181.363708, backward_time = 192.935944
+STEP-41: step_time = 374.150146 ms, foward_time = 181.491714, backward_time = 192.643066
+STEP-42: step_time = 374.873077 ms, foward_time = 181.974014, backward_time = 192.884735
+STEP-43: step_time = 378.904572 ms, foward_time = 186.317825, backward_time = 192.571396
+STEP-44: step_time = 376.001526 ms, foward_time = 181.459961, backward_time = 194.526215
+STEP-45: step_time = 379.174927 ms, foward_time = 185.937927, backward_time = 193.221634
+STEP-46: step_time = 378.784760 ms, foward_time = 186.007553, backward_time = 192.760834
+STEP-47: step_time = 376.603638 ms, foward_time = 182.553604, backward_time = 194.034683
+STEP-48: step_time = 378.229767 ms, foward_time = 185.622528, backward_time = 192.591873
+STEP-49: step_time = 375.133179 ms, foward_time = 181.688324, backward_time = 193.429504
+STEP-50: step_time = 377.604095 ms, foward_time = 183.197693, backward_time = 194.392059
+STEP-51: step_time = 379.415558 ms, foward_time = 186.301437, backward_time = 193.098755
+STEP-52: step_time = 376.613892 ms, foward_time = 182.255615, backward_time = 194.342911
+STEP-53: step_time = 379.584503 ms, foward_time = 185.986053, backward_time = 193.583099
+STEP-54: step_time = 374.441986 ms, foward_time = 181.908478, backward_time = 192.518143
+STEP-55: step_time = 375.888885 ms, foward_time = 181.800964, backward_time = 194.072571
+STEP-56: step_time = 379.494385 ms, foward_time = 185.957382, backward_time = 193.521667
+STEP-57: step_time = 375.062531 ms, foward_time = 182.111237, backward_time = 192.934906
+STEP-58: step_time = 446.948364 ms, foward_time = 252.175354, backward_time = 194.757629
+STEP-59: step_time = 375.178253 ms, foward_time = 182.775803, backward_time = 192.387070
+STEP-60: step_time = 375.183350 ms, foward_time = 181.800964, backward_time = 193.367035
+STEP-61: step_time = 379.450378 ms, foward_time = 186.456070, backward_time = 192.979965
+STEP-62: step_time = 376.964081 ms, foward_time = 182.529022, backward_time = 194.418686
+STEP-63: step_time = 380.924927 ms, foward_time = 186.491898, backward_time = 194.416641
+STEP-64: step_time = 378.724365 ms, foward_time = 185.562119, backward_time = 193.146881
+STEP-65: step_time = 374.108154 ms, foward_time = 181.464066, backward_time = 192.628738
+STEP-66: step_time = 374.380554 ms, foward_time = 181.665787, backward_time = 192.699387
+STEP-67: step_time = 375.980042 ms, foward_time = 183.019516, backward_time = 192.945145
+STEP-68: step_time = 376.381439 ms, foward_time = 182.435837, backward_time = 193.930237
+STEP-69: step_time = 374.177795 ms, foward_time = 181.455872, backward_time = 192.707581
+STEP-70: step_time = 379.486206 ms, foward_time = 186.388474, backward_time = 193.082367
+STEP-71: step_time = 378.717194 ms, foward_time = 183.959549, backward_time = 194.742279
+STEP-72: step_time = 379.672577 ms, foward_time = 186.508286, backward_time = 193.148926
+STEP-73: step_time = 376.150024 ms, foward_time = 182.169601, backward_time = 193.964035
+STEP-74: step_time = 383.061005 ms, foward_time = 185.591812, backward_time = 197.453827
+STEP-75: step_time = 381.274109 ms, foward_time = 185.509888, backward_time = 195.750916
+STEP-76: step_time = 380.936188 ms, foward_time = 186.767365, backward_time = 194.153473
+STEP-77: step_time = 382.260223 ms, foward_time = 188.013565, backward_time = 194.232315
+STEP-78: step_time = 377.934845 ms, foward_time = 185.080826, backward_time = 192.839676
+STEP-79: step_time = 380.102661 ms, foward_time = 186.651642, backward_time = 193.435654
+STEP-80: step_time = 375.372803 ms, foward_time = 182.340607, backward_time = 193.016830
+STEP-81: step_time = 374.175751 ms, foward_time = 181.516281, backward_time = 192.645126
+STEP-82: step_time = 381.089783 ms, foward_time = 186.153976, backward_time = 194.920441
+STEP-83: step_time = 378.471436 ms, foward_time = 185.167877, backward_time = 193.288193
+STEP-84: step_time = 379.792389 ms, foward_time = 185.718781, backward_time = 194.058243
+STEP-85: step_time = 380.377075 ms, foward_time = 185.914368, backward_time = 194.447357
+STEP-86: step_time = 384.540680 ms, foward_time = 187.046906, backward_time = 197.477371
+STEP-87: step_time = 380.521484 ms, foward_time = 185.923584, backward_time = 194.582535
+STEP-88: step_time = 380.538879 ms, foward_time = 186.504196, backward_time = 194.019333
+STEP-89: step_time = 382.436340 ms, foward_time = 186.884094, backward_time = 195.535873
+STEP-90: step_time = 377.291779 ms, foward_time = 183.084030, backward_time = 194.192383
+STEP-91: step_time = 374.814728 ms, foward_time = 181.039108, backward_time = 193.761276
+STEP-92: step_time = 379.223053 ms, foward_time = 184.890366, backward_time = 194.317307
+STEP-93: step_time = 381.236237 ms, foward_time = 187.247620, backward_time = 193.974274
+STEP-94: step_time = 383.141876 ms, foward_time = 186.393600, backward_time = 196.731903
+STEP-95: step_time = 380.253174 ms, foward_time = 183.682053, backward_time = 196.557831
+STEP-96: step_time = 374.791168 ms, foward_time = 178.847748, backward_time = 195.930115
+STEP-97: step_time = 373.238770 ms, foward_time = 178.818054, backward_time = 194.407425
+STEP-98: step_time = 374.958069 ms, foward_time = 180.006912, backward_time = 194.936829
+STEP-99: step_time = 377.772034 ms, foward_time = 180.779007, backward_time = 196.980743
+
+ fastermoe transformer-xl 64 [Summary] Average synchronized step_time = 379.1051778157552 ms,
+local_rank 0
+world_rank 0
+world_size 4
+local_rank 1
+world_rank 1
+world_size 4
+local_rank 2
+world_rank 2
+world_size 4
+local_rank 3
+world_rank 3
+world_size 4
+3 4 init success
+0 4 init success
+1 4 init success
+2 4 init success
+STEP-0: step_time = 1696.589844 ms, foward_time = 1548.596191, backward_time = 147.974152
+STEP-1: step_time = 191.040512 ms, foward_time = 86.849533, backward_time = 104.172546
+STEP-2: step_time = 162.310150 ms, foward_time = 75.832321, backward_time = 86.459389
+STEP-3: step_time = 156.661758 ms, foward_time = 69.430275, backward_time = 87.218178
+STEP-4: step_time = 162.935806 ms, foward_time = 72.478722, backward_time = 90.435585
+STEP-5: step_time = 185.831421 ms, foward_time = 92.760063, backward_time = 93.048836
+STEP-6: step_time = 172.689407 ms, foward_time = 82.914307, backward_time = 89.753601
+STEP-7: step_time = 168.580093 ms, foward_time = 80.868355, backward_time = 87.698433
+STEP-8: step_time = 162.771973 ms, foward_time = 71.795715, backward_time = 90.962944
+STEP-9: step_time = 159.809540 ms, foward_time = 69.433342, backward_time = 90.361855
+STEP-10: step_time = 163.132416 ms, foward_time = 72.654846, backward_time = 90.462212
+STEP-11: step_time = 160.745468 ms, foward_time = 71.142403, backward_time = 89.587715
+STEP-12: step_time = 162.459641 ms, foward_time = 72.472572, backward_time = 89.971710
+STEP-13: step_time = 157.976578 ms, foward_time = 70.871040, backward_time = 87.091202
+STEP-14: step_time = 165.164032 ms, foward_time = 74.710014, backward_time = 90.439682
+STEP-15: step_time = 159.940613 ms, foward_time = 68.567039, backward_time = 91.359230
+STEP-16: step_time = 161.598465 ms, foward_time = 71.504898, backward_time = 90.079231
+STEP-17: step_time = 161.000443 ms, foward_time = 68.868095, backward_time = 92.118019
+STEP-18: step_time = 161.965057 ms, foward_time = 72.082436, backward_time = 89.868286
+STEP-19: step_time = 160.793594 ms, foward_time = 71.533569, backward_time = 89.244675
+STEP-20: step_time = 161.733627 ms, foward_time = 71.024643, backward_time = 90.693634
+STEP-21: step_time = 163.775482 ms, foward_time = 71.873535, backward_time = 91.886589
+STEP-22: step_time = 162.352127 ms, foward_time = 72.578049, backward_time = 89.758720
+STEP-23: step_time = 157.922302 ms, foward_time = 68.367363, backward_time = 89.539581
+STEP-24: step_time = 164.177917 ms, foward_time = 74.019836, backward_time = 90.142723
+STEP-25: step_time = 160.388092 ms, foward_time = 72.912895, backward_time = 87.459839
+STEP-26: step_time = 155.240448 ms, foward_time = 67.928062, backward_time = 87.297028
+STEP-27: step_time = 164.226044 ms, foward_time = 73.637886, backward_time = 90.573822
+STEP-28: step_time = 159.693817 ms, foward_time = 69.651459, backward_time = 90.028030
+STEP-29: step_time = 161.503235 ms, foward_time = 71.197693, backward_time = 90.290176
+STEP-30: step_time = 161.899521 ms, foward_time = 70.858749, backward_time = 91.025406
+STEP-31: step_time = 159.267838 ms, foward_time = 71.993347, backward_time = 87.259132
+STEP-32: step_time = 159.972351 ms, foward_time = 67.862526, backward_time = 92.093437
+STEP-33: step_time = 166.214661 ms, foward_time = 75.495422, backward_time = 90.701820
+STEP-34: step_time = 158.508026 ms, foward_time = 70.452225, backward_time = 88.043518
+STEP-35: step_time = 157.652985 ms, foward_time = 69.127167, backward_time = 88.511490
+STEP-36: step_time = 157.898758 ms, foward_time = 70.015999, backward_time = 87.868416
+STEP-37: step_time = 155.644928 ms, foward_time = 68.204544, backward_time = 87.428093
+STEP-38: step_time = 157.638657 ms, foward_time = 67.795967, backward_time = 89.829376
+STEP-39: step_time = 163.976196 ms, foward_time = 73.974785, backward_time = 89.987076
+STEP-40: step_time = 161.909760 ms, foward_time = 73.869308, backward_time = 88.027138
+STEP-41: step_time = 166.384644 ms, foward_time = 73.733124, backward_time = 92.638206
+STEP-42: step_time = 164.665344 ms, foward_time = 71.183357, backward_time = 93.468674
+STEP-43: step_time = 160.321533 ms, foward_time = 72.333313, backward_time = 87.973885
+STEP-44: step_time = 163.065857 ms, foward_time = 75.411453, backward_time = 87.642113
+STEP-45: step_time = 163.936249 ms, foward_time = 73.290749, backward_time = 90.632195
+STEP-46: step_time = 165.920761 ms, foward_time = 73.656319, backward_time = 92.250114
+STEP-47: step_time = 160.051193 ms, foward_time = 72.250366, backward_time = 87.787521
+STEP-48: step_time = 161.707001 ms, foward_time = 70.764542, backward_time = 90.929153
+STEP-49: step_time = 157.100037 ms, foward_time = 67.919868, backward_time = 89.165825
+STEP-50: step_time = 166.501373 ms, foward_time = 74.493950, backward_time = 91.993088
+STEP-51: step_time = 160.199677 ms, foward_time = 67.946495, backward_time = 92.239876
+STEP-52: step_time = 160.758789 ms, foward_time = 70.526978, backward_time = 90.218498
+STEP-53: step_time = 155.645950 ms, foward_time = 68.307968, backward_time = 87.324669
+STEP-54: step_time = 158.376953 ms, foward_time = 67.658752, backward_time = 90.705917
+STEP-55: step_time = 161.886215 ms, foward_time = 67.860481, backward_time = 94.011391
+STEP-56: step_time = 156.083206 ms, foward_time = 68.317184, backward_time = 87.752701
+STEP-57: step_time = 158.912506 ms, foward_time = 70.432770, backward_time = 88.466431
+STEP-58: step_time = 165.188614 ms, foward_time = 70.398979, backward_time = 94.776321
+STEP-59: step_time = 162.451462 ms, foward_time = 68.666367, backward_time = 93.771774
+STEP-60: step_time = 159.706116 ms, foward_time = 68.555779, backward_time = 91.137024
+STEP-61: step_time = 161.346558 ms, foward_time = 71.239677, backward_time = 90.093567
+STEP-62: step_time = 166.293503 ms, foward_time = 73.801727, backward_time = 92.477440
+STEP-63: step_time = 163.880966 ms, foward_time = 72.201218, backward_time = 91.666435
+STEP-64: step_time = 172.254211 ms, foward_time = 69.317635, backward_time = 102.923264
+STEP-65: step_time = 159.996933 ms, foward_time = 71.255043, backward_time = 88.727554
+STEP-66: step_time = 168.364029 ms, foward_time = 69.421059, backward_time = 98.929665
+STEP-67: step_time = 160.249863 ms, foward_time = 69.203964, backward_time = 91.032578
+STEP-68: step_time = 159.905792 ms, foward_time = 68.767746, backward_time = 91.124733
+STEP-69: step_time = 159.365128 ms, foward_time = 68.430847, backward_time = 90.920959
+STEP-70: step_time = 162.385925 ms, foward_time = 68.383743, backward_time = 93.988861
+STEP-71: step_time = 169.007111 ms, foward_time = 72.205315, backward_time = 96.787453
+STEP-72: step_time = 163.544067 ms, foward_time = 72.102913, backward_time = 91.427841
+STEP-73: step_time = 163.436539 ms, foward_time = 72.188927, backward_time = 91.234306
+STEP-74: step_time = 160.605179 ms, foward_time = 72.314880, backward_time = 88.276993
+STEP-75: step_time = 163.058685 ms, foward_time = 71.592957, backward_time = 91.453438
+STEP-76: step_time = 165.321732 ms, foward_time = 72.456192, backward_time = 92.852226
+STEP-77: step_time = 160.450562 ms, foward_time = 69.728256, backward_time = 90.708992
+STEP-78: step_time = 162.338821 ms, foward_time = 71.549950, backward_time = 90.776573
+STEP-79: step_time = 159.594498 ms, foward_time = 68.541443, backward_time = 91.038719
+STEP-80: step_time = 162.609146 ms, foward_time = 71.865341, backward_time = 90.730499
+STEP-81: step_time = 163.271683 ms, foward_time = 72.773628, backward_time = 90.484734
+STEP-82: step_time = 163.390457 ms, foward_time = 71.317505, backward_time = 92.060669
+STEP-83: step_time = 161.200134 ms, foward_time = 70.872063, backward_time = 90.314751
+STEP-84: step_time = 161.086472 ms, foward_time = 68.947968, backward_time = 92.125183
+STEP-85: step_time = 156.738556 ms, foward_time = 68.398079, backward_time = 88.327171
+STEP-86: step_time = 160.015366 ms, foward_time = 68.633598, backward_time = 91.369469
+STEP-87: step_time = 159.704071 ms, foward_time = 68.657150, backward_time = 91.032578
+STEP-88: step_time = 162.778107 ms, foward_time = 71.101440, backward_time = 91.663361
+STEP-89: step_time = 165.647354 ms, foward_time = 73.544701, backward_time = 92.090370
+STEP-90: step_time = 160.102402 ms, foward_time = 68.950012, backward_time = 91.139069
+STEP-91: step_time = 154.354691 ms, foward_time = 63.513599, backward_time = 90.828796
+STEP-92: step_time = 152.656891 ms, foward_time = 64.089088, backward_time = 88.554497
+STEP-93: step_time = 154.090500 ms, foward_time = 63.845375, backward_time = 90.231812
+STEP-94: step_time = 159.775742 ms, foward_time = 68.317184, backward_time = 91.445251
+STEP-95: step_time = 159.282181 ms, foward_time = 68.302849, backward_time = 90.966019
+STEP-96: step_time = 152.039429 ms, foward_time = 63.793152, backward_time = 88.232964
+STEP-97: step_time = 155.883514 ms, foward_time = 64.617470, backward_time = 91.252739
+STEP-98: step_time = 152.122375 ms, foward_time = 63.804417, backward_time = 88.303619
+STEP-99: step_time = 158.055420 ms, foward_time = 67.112961, backward_time = 90.930176
+
+ mix_moe transformer-xl 64 [Summary] Average synchronized step_time = 161.1162971496582 ms,

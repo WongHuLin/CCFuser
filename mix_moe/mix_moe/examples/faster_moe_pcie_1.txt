@@ -1,0 +1,903 @@
+[Benchmark] world_size = 4, dtype = float16, model_dim = 1024, hidden_size = 4096, samples = 8192, num_local_experts = 8, topK = 2, a2a_ffn_overlap_degree = 1, device = `cuda:0`
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-0: step_time = 7488.428223 ms, foward_time = 7000.114258, backward_time = 487.411713, perf = 0.11 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-1: step_time = 27.462656 ms, foward_time = 25.060352, backward_time = 2.301952, perf = 30.03 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-2: step_time = 25.578497 ms, foward_time = 23.440384, backward_time = 2.056192, perf = 32.24 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-3: step_time = 23.388161 ms, foward_time = 21.397505, backward_time = 1.908736, perf = 35.26 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-4: step_time = 25.350143 ms, foward_time = 23.326719, backward_time = 1.942528, perf = 32.53 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-5: step_time = 23.824385 ms, foward_time = 21.706753, backward_time = 2.028544, perf = 34.61 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-6: step_time = 23.676928 ms, foward_time = 21.437441, backward_time = 2.161664, perf = 34.83 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-7: step_time = 25.927679 ms, foward_time = 23.852032, backward_time = 1.998848, perf = 31.81 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-8: step_time = 23.513088 ms, foward_time = 21.442560, backward_time = 1.970176, perf = 35.07 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-9: step_time = 23.088127 ms, foward_time = 20.887552, backward_time = 2.136064, perf = 35.72 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-10: step_time = 22.769665 ms, foward_time = 20.690945, backward_time = 2.017280, perf = 36.22 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-11: step_time = 25.237503 ms, foward_time = 23.444481, backward_time = 1.667072, perf = 32.67 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-12: step_time = 24.254463 ms, foward_time = 22.154240, backward_time = 2.024448, perf = 34.00 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-13: step_time = 22.590464 ms, foward_time = 20.671488, backward_time = 1.847296, perf = 36.50 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-14: step_time = 24.260609 ms, foward_time = 22.217728, backward_time = 1.968128, perf = 33.99 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-15: step_time = 22.667265 ms, foward_time = 20.767744, backward_time = 1.822720, perf = 36.38 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-16: step_time = 22.547457 ms, foward_time = 20.622335, backward_time = 1.850368, perf = 36.57 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-17: step_time = 25.529345 ms, foward_time = 23.611391, backward_time = 1.842176, perf = 32.30 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-18: step_time = 24.543232 ms, foward_time = 22.455296, backward_time = 1.996800, perf = 33.60 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-19: step_time = 23.023617 ms, foward_time = 21.080065, backward_time = 1.869824, perf = 35.82 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-20: step_time = 22.638592 ms, foward_time = 20.682753, backward_time = 1.884160, perf = 36.43 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-21: step_time = 23.326719 ms, foward_time = 20.889601, backward_time = 2.361344, perf = 35.35 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-22: step_time = 23.159807 ms, foward_time = 21.096449, backward_time = 1.999872, perf = 35.61 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-23: step_time = 22.976513 ms, foward_time = 20.875263, backward_time = 2.042880, perf = 35.89 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-24: step_time = 26.058752 ms, foward_time = 23.061504, backward_time = 2.935808, perf = 31.65 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-25: step_time = 23.439360 ms, foward_time = 21.401600, backward_time = 1.979392, perf = 35.18 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-26: step_time = 22.663168 ms, foward_time = 20.657152, backward_time = 1.948672, perf = 36.39 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-27: step_time = 22.661119 ms, foward_time = 20.656128, backward_time = 1.946624, perf = 36.39 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-28: step_time = 22.481920 ms, foward_time = 20.362240, backward_time = 2.062336, perf = 36.68 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-29: step_time = 24.863745 ms, foward_time = 20.369408, backward_time = 4.435968, perf = 33.17 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-30: step_time = 23.525375 ms, foward_time = 21.483521, backward_time = 1.969152, perf = 35.05 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-31: step_time = 23.926785 ms, foward_time = 20.669439, backward_time = 3.185664, perf = 34.46 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-32: step_time = 22.770687 ms, foward_time = 20.779009, backward_time = 1.921024, perf = 36.21 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-33: step_time = 22.663168 ms, foward_time = 20.771839, backward_time = 1.817600, perf = 36.39 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-34: step_time = 22.381569 ms, foward_time = 20.477951, backward_time = 1.829888, perf = 36.84 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-35: step_time = 24.132608 ms, foward_time = 22.057983, backward_time = 2.014208, perf = 34.17 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-36: step_time = 22.585344 ms, foward_time = 20.481024, backward_time = 2.044928, perf = 36.51 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-37: step_time = 23.268353 ms, foward_time = 20.425728, backward_time = 2.778112, perf = 35.44 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-38: step_time = 23.023617 ms, foward_time = 21.138432, backward_time = 1.813504, perf = 35.82 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-39: step_time = 22.487040 ms, foward_time = 20.540417, backward_time = 1.884160, perf = 36.67 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-40: step_time = 22.303743 ms, foward_time = 20.356096, backward_time = 1.887232, perf = 36.97 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-41: step_time = 22.862848 ms, foward_time = 20.729856, backward_time = 2.045952, perf = 36.07 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-42: step_time = 22.541311 ms, foward_time = 20.602880, backward_time = 1.875968, perf = 36.58 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-43: step_time = 22.390783 ms, foward_time = 20.382721, backward_time = 1.950720, perf = 36.83 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-44: step_time = 22.520832 ms, foward_time = 20.499456, backward_time = 1.936384, perf = 36.62 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-45: step_time = 22.326271 ms, foward_time = 20.287489, backward_time = 1.978368, perf = 36.94 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-46: step_time = 22.330368 ms, foward_time = 20.364288, backward_time = 1.905664, perf = 36.93 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-47: step_time = 29.446144 ms, foward_time = 21.064705, backward_time = 8.300544, perf = 28.00 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-48: step_time = 25.206783 ms, foward_time = 22.938623, backward_time = 2.211840, perf = 32.71 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-49: step_time = 23.081984 ms, foward_time = 20.855808, backward_time = 2.165760, perf = 35.73 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-50: step_time = 22.859776 ms, foward_time = 20.585472, backward_time = 2.214912, perf = 36.07 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-51: step_time = 23.027712 ms, foward_time = 20.752384, backward_time = 2.215936, perf = 35.81 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-52: step_time = 22.598656 ms, foward_time = 20.385792, backward_time = 2.153472, perf = 36.49 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-53: step_time = 23.038977 ms, foward_time = 20.765696, backward_time = 2.214912, perf = 35.79 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-54: step_time = 24.986624 ms, foward_time = 22.025215, backward_time = 2.902016, perf = 33.00 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-55: step_time = 23.293953 ms, foward_time = 21.151745, backward_time = 2.080768, perf = 35.40 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-56: step_time = 22.893568 ms, foward_time = 20.721664, backward_time = 2.114560, perf = 36.02 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-57: step_time = 22.994944 ms, foward_time = 20.815872, backward_time = 2.123776, perf = 35.86 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-58: step_time = 22.746113 ms, foward_time = 20.679680, backward_time = 2.008064, perf = 36.25 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-59: step_time = 22.515713 ms, foward_time = 20.468737, backward_time = 1.988608, perf = 36.62 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-60: step_time = 22.449152 ms, foward_time = 20.369408, backward_time = 2.020352, perf = 36.73 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-61: step_time = 22.631424 ms, foward_time = 20.501505, backward_time = 2.072576, perf = 36.44 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-62: step_time = 22.536192 ms, foward_time = 20.414465, backward_time = 2.064384, perf = 36.59 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-63: step_time = 22.462463 ms, foward_time = 20.492289, backward_time = 1.910784, perf = 36.71 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-64: step_time = 22.614016 ms, foward_time = 20.481024, backward_time = 2.077696, perf = 36.47 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-65: step_time = 22.663168 ms, foward_time = 20.651009, backward_time = 1.956864, perf = 36.39 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-66: step_time = 22.629375 ms, foward_time = 20.545536, backward_time = 2.023424, perf = 36.44 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-67: step_time = 22.420481 ms, foward_time = 20.317184, backward_time = 2.045952, perf = 36.78 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-68: step_time = 22.456320 ms, foward_time = 20.406273, backward_time = 1.994752, perf = 36.72 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-69: step_time = 22.634497 ms, foward_time = 20.534271, backward_time = 2.040832, perf = 36.43 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-70: step_time = 22.447104 ms, foward_time = 20.344831, backward_time = 2.042880, perf = 36.74 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-71: step_time = 22.782976 ms, foward_time = 20.764671, backward_time = 1.948672, perf = 36.20 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-72: step_time = 22.449152 ms, foward_time = 20.536320, backward_time = 1.851392, perf = 36.73 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-73: step_time = 22.585344 ms, foward_time = 20.603905, backward_time = 1.927168, perf = 36.51 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-74: step_time = 22.757376 ms, foward_time = 20.704256, backward_time = 1.997824, perf = 36.24 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-75: step_time = 22.571009 ms, foward_time = 20.480000, backward_time = 2.032640, perf = 36.54 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-76: step_time = 22.385664 ms, foward_time = 20.289536, backward_time = 2.038784, perf = 36.84 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-77: step_time = 22.582272 ms, foward_time = 20.603905, backward_time = 1.921024, perf = 36.52 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-78: step_time = 22.396929 ms, foward_time = 20.305920, backward_time = 2.033664, perf = 36.82 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-79: step_time = 22.895617 ms, foward_time = 20.841473, backward_time = 1.997824, perf = 36.02 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-80: step_time = 22.511616 ms, foward_time = 20.491264, backward_time = 1.963008, perf = 36.63 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-81: step_time = 22.528000 ms, foward_time = 20.553728, backward_time = 1.915904, perf = 36.60 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-82: step_time = 22.638592 ms, foward_time = 20.543488, backward_time = 2.040832, perf = 36.43 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-83: step_time = 22.528000 ms, foward_time = 20.461569, backward_time = 2.011136, perf = 36.60 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-84: step_time = 22.671360 ms, foward_time = 20.530176, backward_time = 2.081792, perf = 36.37 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-85: step_time = 22.580223 ms, foward_time = 20.527103, backward_time = 1.994752, perf = 36.52 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-86: step_time = 24.006657 ms, foward_time = 21.890047, backward_time = 2.057216, perf = 34.35 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-87: step_time = 23.128063 ms, foward_time = 21.026815, backward_time = 2.044928, perf = 35.66 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-88: step_time = 23.096319 ms, foward_time = 21.042175, backward_time = 1.995776, perf = 35.70 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-89: step_time = 23.028736 ms, foward_time = 21.045248, backward_time = 1.921024, perf = 35.81 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-90: step_time = 22.388737 ms, foward_time = 20.441088, backward_time = 1.887232, perf = 36.83 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-91: step_time = 22.587393 ms, foward_time = 20.484097, backward_time = 2.048000, perf = 36.51 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-92: step_time = 22.625280 ms, foward_time = 20.571136, backward_time = 1.989632, perf = 36.45 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-93: step_time = 22.402048 ms, foward_time = 20.390911, backward_time = 1.953792, perf = 36.81 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-94: step_time = 22.767616 ms, foward_time = 20.677631, backward_time = 2.034688, perf = 36.22 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-95: step_time = 22.514688 ms, foward_time = 20.507648, backward_time = 1.948672, perf = 36.63 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-96: step_time = 22.360064 ms, foward_time = 20.375551, backward_time = 1.926144, perf = 36.88 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-97: step_time = 22.577152 ms, foward_time = 20.525057, backward_time = 1.991680, perf = 36.53 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-98: step_time = 22.538240 ms, foward_time = 20.466688, backward_time = 2.014208, perf = 36.59 tflops.
+forward
+forward
+forward
+forward
+True
+True
+True
+True
+STEP-99: step_time = 22.384640 ms, foward_time = 20.446207, backward_time = 1.878016, perf = 36.84 tflops.
+
+[Summary] Average synchronized step_time = 22.853017584482828 ms, forward = 20.66032648086548, backward = 2.1328896005948383.
