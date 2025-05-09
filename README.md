@@ -1,3 +1,7 @@
+# Harnessing inter-gpu shared memory for seamless moe communication-computation fusion
+
+This repo is for PPoPP 2025 artifacts evaluation.
+
 ### Pulling docker images and booting
 
 export CCFuser_HOME=<ccfuser_home>
@@ -94,3 +98,17 @@ cd $ROOT_PATH/mix_moe/ae
 bash $ROOT_PATH/mix_moe/ae/fig12_data.sh
 python fig12_plot.py 
 ```
+
+###  Citation
+If you use Eco-Rec in your research, please consider citing our paper:
+```bash
+@inproceedings{wang2025harnessing,
+  title={Harnessing inter-gpu shared memory for seamless moe communication-computation fusion},
+  author={Wang, Hulin and Xia, Yaqi and Yang, Donglin and Zhou, Xiaobo and Cheng, Dazhao},
+  booktitle={Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming},
+  pages={170--182},
+  year={2025}
+}
+
+```
+
