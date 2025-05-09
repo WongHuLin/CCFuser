@@ -101,7 +101,7 @@ python fig12_plot.py
 
 ###  Citation
 If you use CCFuser in your research, please consider citing our paper:
-```bash
+```bibtex
 @inproceedings{wang2025harnessing,
   title={Harnessing inter-gpu shared memory for seamless moe communication-computation fusion},
   author={Wang, Hulin and Xia, Yaqi and Yang, Donglin and Zhou, Xiaobo and Cheng, Dazhao},
@@ -109,6 +109,5 @@ If you use CCFuser in your research, please consider citing our paper:
   pages={170--182},
   year={2025}
 }
-
 ```
 
