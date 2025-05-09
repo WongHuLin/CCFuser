@@ -1,4 +1,4 @@
-# Harnessing inter-gpu shared memory for seamless moe communication-computation fusion
+# Harnessing inter-gpu shared memory for seamless moe communication-computation fusion (PPoPP'25)
 
 This repo is for PPoPP 2025 artifacts evaluation.
 
@@ -100,7 +100,7 @@ python fig12_plot.py
 ```
 
 ###  Citation
-If you use Eco-Rec in your research, please consider citing our paper:
+If you use CCFuser in your research, please consider citing our paper:
 ```bash
 @inproceedings{wang2025harnessing,
   title={Harnessing inter-gpu shared memory for seamless moe communication-computation fusion},
